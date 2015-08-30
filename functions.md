@@ -55,18 +55,3 @@ Often when designing functions, we can design multiple versions of a function, w
 
     fill(float hueVal, float saturationVal, float brightnessVal);  // now the fill color is HSB
 
-HSB Color-Slider Example
-========================
-
-The hsbSlider project creates an interactive HSB color selector to demonstrate the iterative design process for designing functions. In order to create this UI-widget, first we need to figure out the required components. First, let's plan to create a simple rectangle that is filled with the full HSB hue-range. Then we'll need to figure out how to let the user interact with it to select a color. Then we'll want provide a way to use that selected color in another part of the program.
-
-> -   **Input values:** position and size of the slider widget.
-> -   **Output values:** a hueValue that has been selected.
-> -   **Display:** some representation of a range of hues, and indication of currently selected hue value.
-> -   **Interactivity:** a means for the user to modify and select a hue value.
-
-**Project and Code:** hsbSlider
-
-The image below shows the widget we'll design in this code project.
-
-![image](/images/HSBSlider.png)
