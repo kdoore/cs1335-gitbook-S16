@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Java Syntax](java_syntax.md)
+   * Typed-Variables
 * [Variables](java_-_strongly_typed_variables.md)
 * [Functions](functions.md)
 * [Button States](button_states.md)
