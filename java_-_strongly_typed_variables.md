@@ -1,3 +1,7 @@
+Variables
+==========
+
+
 Variables can be considered as named containers to hold values that can be modified. Since [Processing](http://processing.org) is based on the Java language, it uses Typed-Variables. Variables can hold *primitive* values which involve a single piece of information like integers: `int`, decimal numbers: `float`, booleans: `boolean`, and characters: `char`.
 
 
