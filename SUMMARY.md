@@ -1,9 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
-* [Functions](functions.md)
-   * Button States
 * [OOP, Java, and Processing](chapter1.md)
+   * [Functions](functions.md)
+       * Button States
    * [Java - Strongly Typed Variables](java_-_strongly_typed_variables.md)
    * [Button States](button_states.md)
    * [Functions](functions.md)
