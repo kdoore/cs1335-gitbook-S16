@@ -4,7 +4,8 @@
         "quiz",
         "js-sequence-diagram",
         "mermaid",
-        "plantuml"
+        "plantuml",
+        "jsbin"
     ],
     "pluginsConfig": {}
 }
