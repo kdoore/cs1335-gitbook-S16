@@ -1,3 +1,9 @@
 {
-    "plugins": ["mathjax"]
+    "plugins": [
+        "ace",
+        "quiz",
+        "js-sequence-diagram",
+        "mermaid"
+    ],
+    "pluginsConfig": {}
 }
