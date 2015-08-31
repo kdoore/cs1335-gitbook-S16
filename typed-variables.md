@@ -2,7 +2,13 @@ Variables
 ==========
 
 
-Variables can be considered as named containers to hold values that can be modified. Since [Processing](http://processing.org) is based on the Java language, it uses Typed-Variables. Variables can hold *primitive* values which involve a single piece of information like integers: `int`, decimal numbers: `float`, booleans: `boolean`, and characters: `char`.
+Variables can be considered as named containers to hold values that can be modified. Since [Processing](http://processing.org) is based on the Java language, it uses Typed-Variables. Variables can hold different types of data, either *primitive* values, or *reference* values.  
+
+###Primitive-Data Types
+Primitive-type values involve a single piece of information like integers: `int`, decimal numbers: `float`, booleans: `boolean`, and characters: `char`. Primitive-types use system-defined sizes of memory-space. 
+
+###Reference Data Types
+Reference-type values refer to more complex data-types like arrays and objects; the memory-size required storing the data elements for complex, reference-type variables, is not as easy for the system to determine when the program is being compiled.  
 
 
 Declaration and Initialization
