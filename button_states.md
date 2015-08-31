@@ -75,7 +75,7 @@ void drawButton (int _x, int _y, int _width, int _height) {
     else{
         brightValue=light; //default bright color
     }
-  fill(hueValue, 255, brightValue);  //set fill with hueValue & brightValue
+  fill(hueValue, 255, brightValue);  //set fill with hueValue, brightValue
   //draw button shape
   rect(_x, _y, _width, _height);
   }
@@ -87,7 +87,6 @@ void drawEllipse (int _x, int _y, int _width, int _height) {
   else{
      fill(200,255,255); //purple color
   }
-  
   ellipse (_x, _y, _width, _height );
 }
 
