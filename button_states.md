@@ -22,3 +22,4 @@ In this project, we'll look at button states like hover, pressed, and clicked, a
 Here, we will use global variables to maintain these button states, yet intuitively, it would make sense that the button display state information should only be used within the code to display the button.
 
 In the code below, we create a very simple program with 2 rectangles to explore how to design a button. We want the button to respond to the user's mouse when the mouse interacts with the button's rectangular area to give the user indication that the button is interactive. We will have 2 types of dynamic behavior in this project, one set of behaviors relate to how the button rectangle changes with mouse interaction. Then, we need to have the button change the state of the blue rectangle, using the global state variable `rectState` :
+
