@@ -3,8 +3,7 @@
 Below is a Finite state machine diagram a simple button application.
 We want to implement button using Processing.
 
-
-
+![](fsm-buttons2.png)
 
   The diagram above shows that the square button has 2 main states: 
   
