@@ -27,6 +27,8 @@ We want the button to respond to the user's mouse when the mouse hovers over the
 
 We are using the colorMode(HSB) so that we can simplify the code for the hover behavior.  
 
+<a class="jsbin-embed" href="http://jsbin.com/yizuce/edit?js,output">Code Example on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.2"></script>
+
 {%ace edit=false, lang='java'%}
 // This is a simple button program where the button controls the //color of the ellipse.  
 // The button color is green when the button is on, and red when it's not on.
@@ -102,6 +104,5 @@ void mouseClicked (){
 {%endace%}
 
 
-<a class="jsbin-embed" href="http://jsbin.com/yizuce/edit?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.2"></script>
 
 
