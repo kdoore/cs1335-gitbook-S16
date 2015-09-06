@@ -10,7 +10,7 @@ In the previous example, the button had visually distinct on and off behavior-st
 A door-bell type button behaves in a more instantaneous manner. The button can be thought of as generating an impulse-signal, which is sometimes referred to as a 'bang' in data-flow systems.  This pulse can be used to trigger an event, but the button's state-change behavior isn't visually obvious.  This is the type of button behavior that we'll use in our drawing application to control clearing the canvas.  
 
 ###Radio Button
-Radio Buttons, used to select a car's radio station, or used in web pages, represent another functional style of button behavior.  In this case, several buttons are linked to a single state, where the currently selected button represents the active state for the system.  For our drawing application, we'll use this type of button to allow the user to select the drawing tool (either a pattern or the eraser)
+Radio Buttons, used to select a car's radio station, or used in web pages, represent another functional style of button behavior.  In this case, several buttons are linked to a single state, where the currently selected button represents the active state for the system.  For our drawing application, we'll use this type of button to allow the user to select the drawing tool (either a pattern or the eraser).
 
 
 
