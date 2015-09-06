@@ -5,7 +5,9 @@ Based on the simple button state example in the previous section, now we'll look
 ###Types of Buttons
 In the previous example, the button had visually distinct on and off behavior-states, and it controlled 2 different color-states of an ellipse. This 2-state behavior button (ignoring hover-states), is similar to a wall light switch, where we can look at the switch and observe that it in 1 of 2 possible physical configuration states.  We modeled this system with a 2-state finite state machine, where the states of the button were `on` or `!on`. 
 
-A different type of button is similar to a door-bell button: this type of button behaves in a more instantaneous manner, the button can be thought of as generating an impulse-type signal, sometimes referred to a 'bang' in data-flow systems.  This pulse can be used to trigger an event, but it doesn't  
+A different type of button is similar to a door-bell button: this type of button behaves in a more instantaneous manner. The button can be thought of as generating an impulse-type signal, sometimes referred to a 'bang' in data-flow systems.  This pulse can be used to trigger an event, but the button's state-change behavior isn't visually obvious.  This is the type of button behavior that we'll use in our drawing application to control clearing the canvas.  
+
+
 
 
 
