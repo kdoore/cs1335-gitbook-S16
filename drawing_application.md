@@ -9,4 +9,4 @@ A different type of button is similar to a door-bell button: this type of button
 
 
 
-<a class="jsbin-embed" href="https://jsbin.com/vuqoyu/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.34.3"></script>
+<a class="jsbin-embed" href="https://jsbin.com/vuqoyu/edit?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.34.3"></script>
