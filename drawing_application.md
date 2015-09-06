@@ -13,7 +13,7 @@ A door-bell type button behaves in a more instantaneous manner. The button can b
 Radio Buttons, used to select a car's radio station, or used in web pages, represent another functional style of button behavior.  In this case, several buttons are linked to a single state, where the currently selected button represents the active state for the system.  For our drawing application, we'll use this type of button to allow the user to select the drawing tool (either a pattern or the eraser).  
 
 ##Buttons as objects
-When we consider the different functional types of buttons discussed above, we can begin to think of buttons as objects, and we can differentiate 
+When we consider the different functional types of buttons discussed above, we can begin to think of buttons as objects, and we can consider features that are shared by all of these types of buttons, as well as features that are different between the button styles,  
 
 
 
