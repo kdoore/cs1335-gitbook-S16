@@ -99,11 +99,11 @@ Booleans
 Boolean variables can have the value `true` or `false`; Boolean variables are useful for storing the state some program element to control some branch option within the program, often within a conditional branch, the boolean variable value is changed to indicate the state of the program has changed.:
 
 ```java
-    boolean isActive = true;
-    if(isActive){ 
-        doSomething();  //trigger some state dependent behavior     
-        isActive=false  //change the state variable after the state behavior has been triggered
-        }
+boolean isActive = true;
+if(isActive){ 
+    doSomething();  //trigger some state dependent behavior     
+    isActive=false  //change the state variable after the state behavior has been triggered
+}
         ```
 
 Characters
