@@ -8,5 +8,5 @@
 * [Button States](button_states.md)
 * [Drawing Application](drawing_application.md)
 * [Glossary](GLOSSARY.md)
-* Button Types
+* [Button Types](button_types.md)
 
