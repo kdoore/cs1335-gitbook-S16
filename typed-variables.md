@@ -108,6 +108,7 @@ Single letters or other unicode symbol like 'a', 'b', 'A', '%' . The `char` vari
 
     char someChar = 'a';
     char otherChar = '&';
+    char notAChar = "A";  //this is a string and not a charchar literal.
 
 Random Numbers
 ==============
