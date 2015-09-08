@@ -8,6 +8,6 @@
 * [Button States](button_states.md)
 * [Button Types](button_types.md)
 * [Drawing Application](drawing_application.md)
-* [Glossary](GLOSSARY.md)
 * [Creative Brushes](creative_brushes.md)
+* [Glossary](GLOSSARY.md)
 
