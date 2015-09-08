@@ -5,8 +5,7 @@
         "js-sequence-diagram",
         "mermaid",
         "plantuml",
-        "jsbin",
-        "exercises"
+        "jsbin"
     ],
     "pluginsConfig": {}
 }
