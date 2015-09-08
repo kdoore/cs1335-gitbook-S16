@@ -1,3 +1,5 @@
+#Exercises
+
 {% exercise %}
 Define a variable `x` equal to 10.
 {% initial %}
