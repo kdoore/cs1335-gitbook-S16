@@ -9,4 +9,5 @@
 * [Button Types](button_types.md)
 * [Drawing Application](drawing_application.md)
 * [Glossary](GLOSSARY.md)
+* Creative Brushes
 
