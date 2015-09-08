@@ -37,14 +37,14 @@ Whole numbers like -1, 0, 1, 2.
 Integer Division
 ----------------
 
-When using the math division operator with integers, the resulting value is also an integer, so any fractional division remainder is truncated:
+When using the math division operator with integers, the resulting value is also an integer, so any fractional division remainder is truncated
+```
+println( 5 / 3 );     // 1 
 
-    println( 5 / 3 );     // 1 
+int num1 = 5 / 2;   // 2   the remainder from division is truncated.
 
-    int num1 = 5 / 2;   // 2   the remainder from division is truncated.
-
-    int num2 = 5.0 / 2  // error cannot convert from a float to an int  
-
+int num2 = 5.0 / 2  // error cannot convert from a float to an int  
+```
 Floats
 ======
 
@@ -53,25 +53,25 @@ Decimal numbers like 1.0, 5.5, -1.0. Also, whole numbers like 1, 0, 1 can be sto
 When initializing floating point numbers which are created using math operators, it's important to realize that integer division can cause unexpected results. Multiplying each division expression by the `float` value *1.0* can help insure no truncation occurs.
 
 In the code below, since both 2 and 5 are written as integer literals, then expression 5/2 is evaluated using integer division. Make sure that at least 1 value is a decimal value to insure correct division of numbers assigned to `float` variables:
+```java
+float someFraction = 5 / 2;   // 2.0   integer division of 5/2 is truncated so the result is 2.0
 
-    float someFraction = 5 / 2;   // 2.0   integer division of 5/2 is truncated so the result is 2.0
+float correctFraction = 5.0 / 2;    // 2.5  
 
-    float correctFraction = 5.0 / 2;    // 2.5  
-
-    float correctFraction2 = 5 / (2 * 1.0)  // 2.5  multiplication by 1.0 insures decimal division
-
+float correctFraction2 = 5 / (2 * 1.0)  // 2.5  multiplication by 1.0 insures decimal division
+```
 Integer and Float Type-Conversion
 =================================
 
-Care must be taken when using `float` and `int` variables in expressions or mathematical operations together, particularly when doing division. In general, an error will be generated if an operation will result in truncation. Processing can automatically convert an `int` to a `float` value, however an error will occur when trying to convert a `float` value to an `int` value. :
-
-    int num1 = 5; 
-    int num2 = 2;
-
+Care must be taken when using `float` and `int` variables in expressions or mathematical operations together, particularly when doing division. In general, an error will be generated if an operation will result in truncation. Processing can automatically convert an `int` to a `float` value, however an error will occur when trying to convert a `float` value to an `int` value. 
+```java
+int num1 = 5; 
+int num2 = 2;
+```
     float val1 = num1 / num2;   //2.0  integer division expression is evaluated then assigned to val1.
-
-    int num3 = val1;    // error cannot convert from a float to an int 
-
+```java
+int num3 = val1;    // error cannot convert from a float to an int 
+```
 Processing provides type conversion functions to allow conversion between `int` and `float` variable types. There are 2 different but equivalent syntax conventions for type conversion displayed in the example code below:
 
     float val1 = 5.2;  
@@ -95,20 +95,24 @@ Booleans
 
 Boolean variables can have the value `true` or `false`; Boolean variables are useful for storing the state some program element to control some branch option within the program, often within a conditional branch, the boolean variable value is changed to indicate the state of the program has changed.:
 
+```java
     boolean isActive = true;
     if(isActive){ 
         doSomething();  //trigger some state dependent behavior     
         isActive=false  //change the state variable after the state behavior has been triggered
         }
+        ```
 
 Characters
 ==========
 
-Single letters or other unicode symbol like 'a', 'b', 'A', '%' . The `char` variable type must use single quotes around a single character. When multiple characters are used in a single variable, then the :code: String variable type should be used. :
+Single letters or other unicode symbol like 'a', 'b', 'A', '%' . The `char` variable type must use single quotes around a single character. When multiple characters are used in a single variable, then the :code: String variable type should be used. 
 
+```
     char someChar = 'a';
     char otherChar = '&';
     char notAChar = "A";  //this is a string and not a charchar literal.
+```
 
 Random Numbers
 ==============
