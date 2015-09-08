@@ -14,15 +14,16 @@ Reference-type values refer to more complex data-types like arrays and objects; 
 Declaration and Initialization
 ==============================
 
-In the example code below, the first line of code prints the sum of 2 integer literal values. In the code that follows, `int` and `float` variables are declared and assigned values. :
+In the example code below, the first line of code prints the sum of 2 integer literal values. In the code that follows, `int` and `float` variables are declared and assigned values. 
+```
+println( 5 + 7 );  //two integer literal values are added together
 
-    println( 5 + 7 );  //two integer literal values are added together
+int num1;  //declare an integer variable
 
-    int num1;  //declare an integer variable
+int num2 = 5;   // declare an integer and assign it a literal integer value
 
-    int num2 = 5;   // declare an integer and assign it a literal integer value
-
-    float num3 = 5.0 //declare a floating point variable and assign it a literal decimal value;
+float num3 = 5.0 //declare a floating point variable and assign it a literal decimal value;
+```
 
 Typed Variables
 ===============
@@ -85,10 +86,12 @@ Modulus Operator
 
 The modulus operator `%` calculates the remainder of integer division. Modulus is often used to determine if a number is odd or even where n % 2 equals 0 if n is even.:
 
-    println( 5 % 2 );   // 1    2 goes into 5 two times with a remainder of 1
-    println( 5 % 3 );   // 2    3 goes into 5 one time with a remainder of 2
-    println( 12 % 2 );  // 0    test to determine if 12 is even, for any number n, if n % 2 = 0 then n is even.
-    println( 2 % 5 );   // 2    5 goes into 2 zero times with a remainder of 2
+```java
+println( 5 % 2 );   // 1    2 goes into 5 two times with a remainder of 1
+println( 5 % 3 );   // 2    3 goes into 5 one time with a remainder of 2
+println( 12 % 2 );  // 0    test to determine if 12 is even, for any number n, if n % 2 = 0 then n is even.
+println( 2 % 5 );   // 2    5 goes into 2 zero times with a remainder of 2
+```
 
 Booleans
 ========
