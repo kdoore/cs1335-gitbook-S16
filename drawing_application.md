@@ -22,9 +22,7 @@ We are using  the `int` variable `activeBrush` as a state variable to coordinate
     }
     
 ```
-The starter code below provides the function specifications for the functions and provides an outline of the logic necessary to create the 
-
-
+The starter code below provides the function specifications for the functions and provides an outline of the logic necessary to create an extension of the drawing project above where buttons are used to select the pattern drawn on the canvas.  How can you modify the program so that there are even more available brush patterns, how can you customize the code so the patterns provide good design tools?
 
 ```
 
