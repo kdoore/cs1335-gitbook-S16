@@ -7,8 +7,8 @@
 * [Modeling Processes:  States and Events](modelingstates_and_events_md.md)
 * [Button States](button_states.md)
 * [Button Types](button_types.md)
+* [HSB Color Mode](hsb_color_mode.md)
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
 * [Glossary](GLOSSARY.md)
-* [HSB Color Mode](hsb_color_mode.md)
 
