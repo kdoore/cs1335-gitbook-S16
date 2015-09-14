@@ -10,11 +10,21 @@ Currently, the drawing application below has a default brush pattern which is dr
 <a class="jsbin-embed" href="http://jsbin.com/vuqoyu/edit?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
 
 
-###Starter Code for Project 1 - Drawing Application
+##Starter Code for Drawing Application
 
-Enumerated list of allowable of `activeBrush`  State Variables
+###Enumerated list of allowable of `activeBrush`  State Variables
 
-We are using  the `int` variable `activeBrush` as an state variable to control the group of radio-type buttons that control the pattern drawn when the mouse is pressed.  Since we will want to add more brush patterns in the future, we need to have a state variable that can take on several different values.  We will need to check the state of the `activeBrush` variable, so it's convenient to make it an integer value and to create a list of allowable states, which we initialize as ``static final int`` variables so that their state can't be changed in the program.  In other languages, this collection of state variables are called an Enumeration.  Processing doesn't support creation of enumeration data types, but we can create our own version of an enumeration so that each time we check the state of the `activeBrush`, we check it against our enumerated list, where we use meaningful labels to make our program meaning explicit. 
+We are using  the `int` variable `activeBrush` as a state variable to coordinate the group of radio-type buttons that control the active brush-pattern drawn when the mouse is pressed.  Since we will want to add more brush-patterns in the future, we need to have a state variable that can take on several different values.  Throughout the program, we will need to check the current state of the `activeBrush` variable. It's convenient to make `activeBrush` an integer value, and to create a list of allowable states, which we initialize as ``static final int`` variables so that their state can't be changed in the program.  In other languages, this collection of state variables is called an enumeration.  Processing doesn't support creation of `Enumeration` data-types, but we can create our own version of an enumeration so that each time we check the state of the `activeBrush`, we check it against our enumerated list, where we use meaningful labels to make our program meaning explicit.
+
+```//example
+    if(activeBrush==pattern1){   //comparing 2 int values: activeBrush, pattern1
+        drawPattern1();  //if true, then drawPattern1() for the brushPattern
+    }
+    
+```
+The starter code below provides the function specifications for the functions and provides an outline of the logic necessary to create the 
+
+
 
 ```
 
