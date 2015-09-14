@@ -10,4 +10,5 @@
 * [Drawing Application](drawing_application.md)
 * [Creative Brushes](creative_brushes.md)
 * [Glossary](GLOSSARY.md)
+* HSB Color Mode
 
