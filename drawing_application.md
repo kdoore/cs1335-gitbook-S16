@@ -4,13 +4,17 @@ Based on the simple button state example in the previous section, now we'll look
 
 ##Programming Project
 
-Currently, the drawing application below has a default brush pattern which is drawn when the mouse is pressed and it is over the drawing-canvas area.  Extend the program below to include 3 different pattern buttons, where one pattern functions as an eraser by drawing white ellipses.   It will be necessary to add a new state variable: ``activePattern`` to keep track of the currently selected pattern. Three buttons can be created to allow the user to select which pattern should be active.  In the mouseClicked event, it will be necessary to check to see which button is activated if a user clicks to change the brush pattern.  
+Currently, the drawing application below has a default brush pattern which is drawn when the mouse is pressed and it is over the drawing-canvas area.  Extend the program below to include 2 different pattern buttons, where one pattern functions as an eraser by drawing white ellipses.   It will be necessary to add a new state variable: ``activeBrush`` to keep track of the currently selected pattern. Two buttons can be created to allow the user to select which pattern should be active.  In the mouseClicked event, it will be necessary to check to see which button is activated if a user clicks to change the brush pattern. The pattern buttons should change color to show if they are in the active state or not. 
 
 
 <a class="jsbin-embed" href="http://jsbin.com/vuqoyu/edit?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
 
 
 ###Starter Code for Project 1 - Drawing Application
+
+Enumerated list of allowable of `activeBrush`  State Variables
+
+We are using  the `int` variable `activeBrush` as an state variable to control the group of radio-type buttons that control the pattern drawn when the mouse is pressed.  Since we will want to add more brush patterns in the future, we need to have a state variable that can take on several different values.  We will need to check the state of the `activeBrush` variable, so it's convenient to make it an integer value and to create a list of allowable states, which we initialize as ``static final int`` variables so that their state can't be changed in the program.  In other languages, this collection of state variables are called an Enumeration.  Processing doesn't support creation of enumeration data types, but we can create our own version of an enumeration so that each time we check the state of the `activeBrush`, we check it against our enumerated list, where we use meaningful labels to make our program meaning explicit. 
 
 ```
 
