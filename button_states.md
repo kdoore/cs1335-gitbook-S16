@@ -6,16 +6,16 @@ In this project, we'll look at button behaviors like hover, pressed, and clicked
  Below is one possible way we could describe or model the features of a button:
 
   **Function:**  
-  -   Indicate and allow change of State for some system variable
+  -   Indicate and allow change of State for some system object or variable
  
 
   **Behaviors:**  
-  -   Default, Hover, MousePressed, MouseClicked
+  -   Display Color of Button:  Default, Hover, MousePressed, MouseClicked
  
 
   **Structure:**  
   -   Square defines activation area
-  -   Fill and stroke changes to indicate behavior and state
+  -   Fill Color changes to indicate mouse-behavior and state
   -   Position is defined with x,y coordinates on the canvas
   -   Size is defined by some width and height values
  
