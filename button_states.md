@@ -1,7 +1,7 @@
 Button States
 ==============
 
-In this project, we'll look at button states like hover, pressed, and clicked, as well as how buttons can be used to provide users with control over states of other elements of our programs. This project continues to emphasize the use of functions to create modular code. In a future version of this project, we'll create object-oriented buttons. As this project shows, it is helpful to think of buttons as having different behaviors such as display color depending on their current state and user interaction. It is instructive to consider how a button differs from a simple rectangle, code written for the button directly relates to the behaviors and functions of a button when contrasted with a simple rectangle.
+In this project, we'll look at button behaviors like hover, pressed, and clicked, as well as how buttons can be used to provide users with control over states of other elements of our programs. This project continues to emphasize the use of functions to create modular code. In a future version of this project, we'll create object-oriented buttons. As this project shows, it is helpful to think of buttons as having different behaviors such as display color depending on their current state and user interaction. It is instructive to consider how a button differs from a simple rectangle, code written for the button directly relates to the behaviors and functions of a button when contrasted with a simple rectangle.
 
  Below is one possible way we could describe or model the features of a button:
 
@@ -21,11 +21,11 @@ In this project, we'll look at button states like hover, pressed, and clicked, a
  
 Here, we will use global variables to maintain these button states, yet intuitively, it would make sense that the button display state information should only be used within the code to display the button.
 
-In the code below, we create a very simple program with 2 a rectangle button and an ellipse that the button controls, to explore how to design a button. 
+In the code below, we create a very simple program with a rectangle button and an ellipse, who's display color is controlled by interacting with the button. 
 
-We want the button to respond to the user's mouse when the mouse hovers over the button's rectangular area to give the user indication that the button is interactive. We will have 2 types of dynamic behavior in this project, one set of behaviors relate to how the button rectangle changes with mouse interaction. Then, we need to have the button-state also control the state of the ellipse, using the global state variable `on` :
+We want the button to display some behavior in response to the user's mouse when the mouse hovers over the button's rectangular area to give the user indication that the button is interactive. We will have 2 types of dynamic behavior in this project, the first set of behaviors relate to how the button's displayed rectangle changes color with mouse interaction. Second, we also need to have the button-state control the display state of the ellipse, using the global state variable `on` :
 
-We are using the colorMode(HSB) so that we can simplify the code for the hover behavior.  
+We are using the colorMode(HSB) so that we can simplify the code for the hover behavior, where we simply modify the HSB `Brightness` parameter when the user's mouse is positioned directly over the button.  
 
 <a class="jsbin-embed" href="http://jsbin.com/yizuce/edit?js,output">Code Example on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.2"></script>
 
