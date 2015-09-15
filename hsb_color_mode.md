@@ -4,5 +4,19 @@
 Image from: [TomJewett.com](http://www.tomjewett.com/colors/hsb.html)
 
 ###HSB Color 
-The image above shows the HSB color-space.  From this diagram, we can see that if we want to understand a specific HSB color, in terms of Hue, Saturation, and Brightness parameter values, it is easiest to read a HSB color starting with the brightness parameter which corresponds to the verticle axis of the color-cone.  The brightness scale defines grayscale colors, where a brightness value of 0 corresponds to black, and the max-brightness corresponds to white.  So, if we see an HSB value with O for brightness, the other values (H,S) don't have an impact on the color because the colorspace is at the lowest tip of the cone, and black is the only color in this region.  So for a fill() function with 3 values fill(H, S, B), we should start reading the color from the right-most parameter, the B value.  If the B value is 255 (the max value), then we can see that these colors correspond to the top surface of the cone.  Within this circular slice, we can see that the center of the circle is white, and as the radius increases, the saturation increases so the outer rim of the circle has full saturation values.  So, when analyzing an HSB value, once we've determined that B is greater than 0, we next need to look at the S value to determine the saturation level.  This corresponds to moving outwards from the center-point of the circle, to colors with higher saturation intensity.  The Hue value corresponds to the angle of rotation around the circle.  This image shows the hue angle incorrectly, for processing the hue values increase in the clockwise direction, with the 0 value at the 3 o'clock position. 
+The image above shows the HSB color-space.  From this diagram, we can see that if we want to understand a specific HSB color, in terms of Hue, Saturation, and Brightness parameter values, it is easiest to read a HSB color starting with the brightness parameter which corresponds to the verticle axis of the color-cone.  
+
+###Brightness
+The brightness scale defines grayscale colors, where a brightness value of 0 corresponds to black, and the max-brightness corresponds to white.  So, if we see an HSB value with O for brightness, the other values (H,S) don't have an impact on the color because the colorspace is at the lowest tip of the cone, and black is the only color in this region.  So for a fill() function with 3 values fill(H, S, B), we should start reading the color from the right-most parameter, the B value.  If the B value is 255 (the max value), then we can see that these colors correspond to the top surface of the cone.  
+
+###Saturation
+Within this circular slice, we can see that the center of the circle is white, and as the radius increases, the saturation increases so the outer rim of the circle has full saturation values.  So, when analyzing an HSB value, once we've determined that B is greater than 0, we next need to look at the S value to determine the saturation level.  This corresponds to moving outwards from the center-point of the circle, to colors with higher saturation intensity.  
+
+###Hue
+
+The Hue value corresponds to the angle of rotation around the circle.  This image shows the hue angle with the opposite orientation than what is used for the Processing language.  In Processing, the hue values increase in the clockwise direction, with the 0 value at the 3 o'clock position, and this corresponds to the color red.  The default range for HSB input parameters is 0-255.  So, when looking at the angular position of a  a color, we need to remember to scale the colors so that the 0-360 color range is mapped to the variable range: 0-255.  We can either write a math equation for this conversion or we can use the Processing map() function.
+
+```
+
+```
 
