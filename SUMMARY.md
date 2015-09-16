@@ -11,5 +11,5 @@
 * [HSB Color Mode](hsb_color_mode.md)
 * [Creative Brushes](creative_brushes.md)
 * [Glossary](GLOSSARY.md)
-* Buttons as Objects
+* [Buttons as Objects](buttons_as_objects.md)
 
