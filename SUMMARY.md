@@ -10,6 +10,6 @@
 * [Drawing Application](drawing_application.md)
 * [HSB Color Mode](hsb_color_mode.md)
 * [Creative Brushes](creative_brushes.md)
-* [Glossary](GLOSSARY.md)
 * [Buttons as Objects](buttons_as_objects.md)
+* [Glossary](GLOSSARY.md)
 
