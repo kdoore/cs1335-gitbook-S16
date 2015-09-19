@@ -37,6 +37,81 @@ When looking at the code in a Class definition, we can see a similarity with the
 
 ![](MainVsClass.png)
 
+In [Shiffman's book](http://learningprocessing.org), he provides example code for how to make an Button class as part of his example problems: 9.8.  
+
+###First Attempt: Button Class
+Below is our first attempt at creating a Button Class.  We still need to make some modifications to the code so that the button will change colors correctly.  
+
+```java
+///this is our Button base-class
+class Button{
+  //instance variables
+  float x, y, w, h;
+  boolean on;
+  color buttonColor;
+  
+  //default constructor
+  Button(){
+    x=0;
+    y=0;
+    w=50;
+    h=50;
+    on = false;
+    buttonColor= color(255,0,0);
+  }
+  
+  Button( float _x, float _y, float _w, float _h){
+      this.x = _x;
+      this.y=_y;
+      w = _w;
+      h = _h;
+      on =false;
+      buttonColor= color(255,0,0);
+  }
+  
+  //methods
+  void display(){
+      fill(buttonColor);
+      rect(x,y,w,h);
+  }
+  
+  void click(int mx, int my){ //check to see if mouse is over button when clicked is called
+      if(( (mouseX > x) && (mx <(x+w)))  && (( my> y  ) && (my < (y+h)))){
+          on=!on; 
+          buttonColor=color(0);
+          println("buttonState: " + on);
+      }
+  }
+  
+}  //end of Button class
+```
+
+###Main Tab - Creating Button Objects
+The code below is from the main tab for a program which uses the Button class to make Button objects.  The code shows the comparision between how to declare and initialize primitive variables like int.  When creating objects, it's necessary to call the class constructor function. 
+
+```
+//Global Variable Declaration
+int someVal;  //we declare the type: int, then the name someVal
+Button myButton;  //we declare the type: Button, then the name: myButton
+
+//initialization
+void setup(){
+  size(400,400);
+  someVal=5;  //we initialize the int variable
+  myButton = new Button();  //for objects, we must call the constructor method
+                            //to instantiate a new object
+}                            
+
+void draw(){
+  myButton.display();   //we use 'dot-notation' to call the Button display() method
+}
+
+void mouseClicked(){
+    myButton.click(mouseX, mouseY);  //we use 'dot-notation' to call the Button click() method
+}
+
+```
+
 Questions
 =========
 
