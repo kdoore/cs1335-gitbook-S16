@@ -112,6 +112,66 @@ void mouseClicked(){
 
 ```
 
+#Working Button Code
+```
+
+///this is our Button base-class
+class Button{
+  //instance variables
+  float x, y, w, h;
+  boolean on;
+  color buttonColorOn, buttonColorOff;
+  PImage img;
+  //default constructor
+  Button(){
+    this(0,0,50,50);
+  }
+  
+ 
+  Button( float _x, float _y, float _w, float _h){
+      this.x = _x;
+      this.y=_y;
+      w = _w;
+      h = _h;
+      on =false;
+       buttonColorOn=color(255);
+       buttonColorOff=color(200);
+  }
+  
+  void setImage(PImage _img){
+    this.img=_img;
+  }
+  
+  //methods
+  void display(){
+    if(on)fill(buttonColorOn);
+    else fill(buttonColorOff);
+      rect(x,y,w,h);
+  }
+  
+  void setOff(){
+    on=false;
+  }
+  
+  void setOn(){
+    on=true;
+  }
+  
+  boolean getOn(){
+    return on;
+  }
+  
+  void click(int mx, int my){
+      if(( (mouseX > x) && (mx <(x+w)))  && (( my> y  ) && (my < (y+h)))){
+          on=!on; 
+          println("buttonState: " + on);
+      }
+  }
+  
+  
+}  
+```
+
 Questions
 =========
 
