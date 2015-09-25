@@ -63,10 +63,10 @@ Based on the image above, we can start to think about this logic by focusing on 
 void click(int mX, int mY){
         // check to make sure btn1 is not
       if(activeButton != button1){
-        btn1.click(mX, mY);
-        if(btn1.on==true){
-            btn2.on=false;
-            btn3.on=false;
+        btn1.click(mX, mY);   //call the click method for btn1
+        if(btn1.on==true){  //the button has just been activated by the click event
+            btn2.on=false;  //set btn2 off
+            btn3.on=false;  //set btn3 off
             activeButton=button1;
          }
       }
