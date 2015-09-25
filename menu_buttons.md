@@ -1,4 +1,4 @@
-#Button-Menu Object
+#Menu Object with Buttons
 
 Now that we've created our button class, which is our template to create button objects, it's time to leverage our hard work to simplify the drawing application
 
@@ -9,3 +9,5 @@ We will create a Menu class, and it will be composed of a set of button objects.
 
 ![](MenuFSM.png)
 The image above shows that the 3 Menu-Button objects must work together, only 1 button can be active at a time.  If Button 1 is currently active, then the events:  Click2 or Click3 will change the Menu-State.  In the Menu class, we need to implement a state variable:  ActiveButton which will store the current-state:  activeButton.  In addition, we must supply logic so that when these events happen, the other buttons are de-activated.   
+
+###Code:  
