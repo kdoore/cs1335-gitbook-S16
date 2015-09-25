@@ -7,9 +7,8 @@ We will create the Menu class, and it will be composed of a set of button object
 
 
 ### Menu Code: 
-In the code below, we have created the Menu Class, we've added 3 button objects, they are initialized in the constructor and we've created a display() and click() method. Within the Menu display() method, we simply call the display() method for each button. However, right now these buttons don't have the required logic needed for them to function as a menu, we need to add logic to the click() method.  Right now each of these buttons each works independently.  
+In the code below, we have created the Menu Class, we've added 3 button objects, they are initialized in the constructor and we've created a ``display()`` and ``click()`` method. Within the Menu ``display()`` method, we simply call the ``display()`` method for each button. However, right now these buttons don't have the required logic needed for them to function as a menu, we still need to add additional control logic to the ``click()`` method. Currently, each of these buttons each works independently.  
 
-What code do we need to add to create the radio button behavior?
 ```
 class Menu{
   
@@ -38,10 +37,12 @@ class Menu{
 }  //end class
 
 ```
+What code do we need to add to create the radio button behavior?
+
 ###Menu Buttons Finite State Machine
 
 ![](MenuFSM.png)
-In the image above, each circle represents the state of the system when that button is the active button.  The arrows or arcs show the events that cause the system to change state.  The arc from Button1 to Button2 shows that if Button1 is the current activeButton, then if the user clicks on button 2, the system will change state so that Button2 will be the activeButton.  The arcs also show the other actions that we must implement when the click2 event happens:  we must set all other buttons to the off-state.  In our code, we'd set btn1.on=false.  This means we assign the value of false to the on instance variable for the btn1 object.
+In the image above, each circle represents the state of the system when that button is the active button.  The arrows or arcs show the events that cause the system to change state.  The arc from Button1 to Button2 shows that if Button1 is the current ``activeButton``, then if the user clicks on button 2, the system will change state so that Button2 will be the ``activeButton``.  The arcs also show the other actions that we must implement when the click2 event happens:  we must set all other buttons to the off-state.  In our code, we'd set ``btn1.on=false`` and ``btn3.on=false``.  This means we assign the value of false to the ``on`` instance variable for the ``btn1`` and ``btn3`` objects.
 
 The image above shows that the 3 Menu-Button objects must work together, only 1 button can be active at a time.    If Button 1 is currently active, then the events:  Click2 or Click3 will change the Menu-State.  In the Menu class, we need to implement a state variable:  ActiveButton which will store the current-state:  activeButton.  In addition, we must supply logic so that when these events happen, the other buttons are de-activated.  
 
