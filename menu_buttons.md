@@ -2,12 +2,12 @@
 
 Now that we've created our button class, which is our template to create button objects, it's time to leverage our hard work to simplify the drawing application
 
-###Composition:  Menu Has Button Objects
-We will create a Menu class, and it will be composed of a set of button objects.  The button objects are responsible for most of their behavior, however, since we want these buttons to work together as a radio-button type menu, we're going to have to add some additional logic to the Menu class to insure that only 1 button is active at a time.  
+###Composition:  A Menu *Has* Button Objects
+We will create the Menu class, and it will be composed of a set of button objects.  The button objects are responsible for most of their own behavior, however, since we want these buttons to work together as a radio-button type menu, we're going to have to add some additional logic to the Menu class to insure that only 1 button is active at a time.  
 
 
 ### Menu Code: 
-In the code below, we have created the Menu Class, we've added 3 button objects, they are initialized in the constructor and we've created a display() and click() method.  However, right now these buttons don't have the required logic needed for them to function as a menu.  Right now these buttons each work independently.  
+In the code below, we have created the Menu Class, we've added 3 button objects, they are initialized in the constructor and we've created a display() and click() method. Within the Menu display() method, we simply call the display() method for each button. However, right now these buttons don't have the required logic needed for them to function as a menu, we need to add logic to the click() method.  Right now each of these buttons each works independently.  
 
 What code do we need to add to create the radio button behavior?
 ```
