@@ -12,5 +12,5 @@
 * [Creative Brushes](creative_brushes.md)
 * [Buttons as Objects](buttons_as_objects.md)
 * [Glossary](GLOSSARY.md)
-* Menu Buttons
+* [Menu Buttons](menu_buttons.md)
 
