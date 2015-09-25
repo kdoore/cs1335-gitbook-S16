@@ -41,7 +41,9 @@ class Menu{
 ###Menu Buttons Finite State Machine
 
 ![](MenuFSM.png)
-The image above shows that the 3 Menu-Button objects must work together, only 1 button can be active at a time.  If Button 1 is currently active, then the events:  Click2 or Click3 will change the Menu-State.  In the Menu class, we need to implement a state variable:  ActiveButton which will store the current-state:  activeButton.  In addition, we must supply logic so that when these events happen, the other buttons are de-activated.  
+In the image above, each circle represents the state of the system when that button is the active button.  The arrows or arcs show the events that cause the system to change state.  The arc from Button1 to Button2 shows that if Button1 is the current activeButton, then if the user clicks on button 2, the system will change state so that Button2 will be the activeButton.  The arcs also show the other actions that we must implement when the click2 event happens:  we must set all other buttons to the off-state.  In our code, we'd set btn1.on=false.  This means we assign the value of false to the on instance variable for the btn1 object.
+
+The image above shows that the 3 Menu-Button objects must work together, only 1 button can be active at a time.    If Button 1 is currently active, then the events:  Click2 or Click3 will change the Menu-State.  In the Menu class, we need to implement a state variable:  ActiveButton which will store the current-state:  activeButton.  In addition, we must supply logic so that when these events happen, the other buttons are de-activated.  
 
 ###ActiveButton variable
 We need a variable to store the current activeButton, we can use an int variable and constant values for our allowed states for buttons: 1, 2, 3:
@@ -49,12 +51,15 @@ We need a variable to store the current activeButton, we can use an int variable
 ```
 int activeButton=0;  //no buttons are active 
 final btn1 = 1;   //constant value can't be modified
-final btn2 = 2;
-final btn3 = 3;
+final btn2 = 2;   // we use these as state indicator variables
+final btn3 = 3;   // this makes our code easier to understand
 ```
  
 ###Menu Click Method()
-In the code above, when a click event happens
+In the code above, when a click event happens we simply call all menu-button click events, and after those events, we may have several buttons in the on-state.  It's impossible for us to know which button was most recently clicked, or which button had already been in the on state.  So, we need to add some logical structure to our code so we can determine which button should be identified as the activeButton.   
+
+###Button1 Click()
+Based on the image above, we can start to think about this logic by focusing on just Button1.  We can see from the image that the only time we need to  
 
 
 
