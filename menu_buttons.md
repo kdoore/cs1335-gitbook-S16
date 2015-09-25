@@ -61,7 +61,7 @@ In the code above, when a click event happens we simply call all menu-button cli
 Based on the image above, we can start to think about this logic by focusing on just Button1.  We can see from the image that the only time we need to worry about button1 being clicked is when it isn't currently the ``activeButton``.  If we verify that activeButton != button1, then we can check the state of btn1 after the button1.click() method is executed, if it is now in the on state:  ``btn1.on==true``, then we know to change set activeButton=button1.  In addition, as shown in the FSM image above, we also know that we need to manually set both btn2 and btn3 off, we do this by setting btn2.on=false.  We don't need to know which state was the previous active state...it could have been either button2 or button3, but we set both of their internal states to off and we're on our way to having working radio buttons.  We simply need to write similar tests for the cases when we know that button2 is not the activeButton, and similarly with button3.  The code below shows the logic for button1.
 ```
 void click(int mX, int mY){
-        // check to make sure btn1 is not
+        // check to make sure btn1 is not the current activeButton
       if(activeButton != button1){
         btn1.click(mX, mY);   //call the click method for btn1
         if(btn1.on==true){  //the button has just been activated by the click event
