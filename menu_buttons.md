@@ -49,9 +49,9 @@ We need a variable to store the current activeButton, we can use an int variable
 
 ```
 int activeButton=0;  //no buttons are active 
-final btn1 = 1;   //constant value can't be modified
-final btn2 = 2;   // we use these as state indicator variables
-final btn3 = 3;   // this makes our code easier to understand
+final button1 = 1;   //constant value can't be modified
+final button2 = 2;   // we use these as state indicator variables
+final button3 = 3;   // this makes our code easier to understand
 ```
  
 ###Menu Click Method()
@@ -62,12 +62,12 @@ Based on the image above, we can start to think about this logic by focusing on 
 ```
 void click(int mX, int mY){
         // check to make sure btn1 is not
-      if(activeButton != btn1){
-        button1.click(mX, mY);
-        if(button1.getOn()){
-            button2.setOff();
-            button3.setOff();
-            activeButton=btn1;
+      if(activeButton != button1){
+        btn1.click(mX, mY);
+        if(btn1.on==true){
+            btn2.on=false;
+            btn3.on=false;
+            activeButton=button1;
          }
       }
       ```
