@@ -69,6 +69,7 @@ void click(int mX, int mY){
             btn3.on=false;  //set btn3 off
             activeButton=button1;
          }
+         //this code must be completed for each of the buttons
       }
       ```
 
