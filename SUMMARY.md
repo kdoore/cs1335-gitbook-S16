@@ -11,8 +11,8 @@
 * [HSB Color Mode](hsb_color_mode.md)
 * [Creative Brushes](creative_brushes.md)
 * [Buttons as Objects](buttons_as_objects.md)
-* Arrays of Buttons
 * [Menu Buttons](menu_buttons.md)
+* Arrays of Buttons
 * Reference Data Types
 * [Glossary](GLOSSARY.md)
 
