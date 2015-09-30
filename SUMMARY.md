@@ -12,7 +12,7 @@
 * [Creative Brushes](creative_brushes.md)
 * [Buttons as Objects](buttons_as_objects.md)
 * [Menu Buttons](menu_buttons.md)
-* [Arrays of Buttons](arrays_of_buttons.md)
+* [Arrays of Objects](arrays_of_objects.md)
 * [Reference Data Types](reference_data_types.md)
 * [Glossary](GLOSSARY.md)
 
