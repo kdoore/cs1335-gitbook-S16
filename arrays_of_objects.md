@@ -5,5 +5,10 @@ In the previous section, we discussed how to create a group of buttons which beh
 
 ###Observations:
 
-    1. Our Menu is not very extensible since we have hard-coded the Button creation logic within the Menu class, we'd prefer flexibility in the number of buttons in our menu.
-    2. When looking at our code, we observe that we're performing the identical operations on each button, this repetition of similar code suggests that using an Array and a loop could simplify our code and could provide more flexibility.
+    1. Our Menu is not very extensible since we have hard-coded the Button creation logic within 
+    the Menu class, we'd prefer flexibility in the number of buttons in our menu.
+
+    
+    2. When looking at our code, we observe that we're performing the identical operations on each button, 
+    this repetition of similar code suggests that using an Array and a loop could simplify our code and 
+    could provide more flexibility.
