@@ -13,4 +13,5 @@
 * [Buttons as Objects](buttons_as_objects.md)
 * [Menu Buttons](menu_buttons.md)
 * [Glossary](GLOSSARY.md)
+* Arrays of Buttons
 
