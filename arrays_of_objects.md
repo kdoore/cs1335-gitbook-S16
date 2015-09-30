@@ -11,3 +11,21 @@ In the previous section, we discussed how to create a group of buttons which beh
     2. When looking at our code, we observe that we're performing the identical operations on each
     button, this repetition of similar code suggests that using an Array and a loop could simplify
     our code and could provide more flexibility.
+    
+###Arrays as Constructor Parameter
+For maximum flexibility for collections of objects like our Menu that is composed of Buttons, one powerful approach is that we can declare an Array of Buttons as an instance variable for the class, then we can have an Array of Buttons as an input parameter for the Menu Constructor.  This allows us to provide more specific configuration details for each button before adding it to the Menu.
+
+```
+//Create Class MenuArray 
+class MenuArray{
+    //instance variables
+    Button[] btnArray;  //declare an array of Buttons
+    int numButtons;     //how many Buttons are there?
+    
+    MenuArray( Button _btnArray, int _numButtons){
+      btnArray=_btnArray;  //initialize instance variables with 
+      numButtons=_numButtons;
+    }
+  //methods 
+}
+```
