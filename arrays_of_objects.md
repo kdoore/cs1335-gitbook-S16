@@ -29,4 +29,13 @@ class MenuArray{
   //methods 
 }
 ```
-
+```
+//main tab code 
+Button[] btnArray;
+void setup(){
+    btnArray=new Button[3];
+    // use loop to initialize btnArray
+    for(int i=0;i < 3; i++){
+        btnArray[i]= new Button(0,(i * 50),50,50);
+    }
+}
