@@ -29,17 +29,17 @@ class MenuArray{
   //methods 
 }
 ```
-In the code below we define an array BtnArray of Button objects, then we use a for-loop to initialize the array elements by calling the Button constructor or each BtnArray element: ``btnArray[i]``
-
-```java
+Below is the code in the program's main tab to initialize the btnArray.
+```
 //main tab code 
-Button[] btnArray;  //declare the btnArray: of Button objects
+Button[] btnArray;
+MenuArray myMenuArray;
 void setup(){
-    btnArray=new Button[3];  //initialize the btnArray array
-    // use loop to initialize btnArray elements
+    btnArray=new Button[3];
+    // use loop to initialize btnArray
     for(int i=0;i < 3; i++){
-        btnArray[i]= new Button(0,(i * 50),50,50); //call the Button constructor to initialize each Button array element
+        btnArray[i]= new Button(0,(i * 50),50,50);
     }
+    myMenuArray = new MenuArray( btnArray, 3);  //call menu constructor using an array input parameter
 }
 ```
-
