@@ -33,6 +33,7 @@ class MenuArray{
   //methods 
 }
 ```
+### Use Loops to Iterate through Array Elements
 Below is the code in the program's main tab to initialize the btnArray.
 ```
 //main tab code 
@@ -47,3 +48,4 @@ void setup(){
     myMenuArray = new MenuArray( btnArray, 3);  //call menu constructor using an array input parameter
 }
 ```
+If we look at the code for our initial attempt at writing the Menu class, can discover patterns that can help us now that we're trying to modify our code to use an Array of Button objects in our Menu Class.
