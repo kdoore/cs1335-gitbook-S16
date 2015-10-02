@@ -52,3 +52,21 @@ If we look at the code for our initial attempt at writing the Menu class, can di
 
 How can we convert the following code so that it's implemented using an array instead of hard coded Button objects?
 
+```
+void click(int mX, int mY){
+        // check to make sure btn1 is not the current activeButton
+      if(activeButton != button1){
+        btn1.click(mX, mY);   //call the click method for btn1
+        if(btn1.on==true){  //the button has just been activated by the click event
+            btn2.on=false;  //set btn2 off
+            btn3.on=false;  //set btn3 off
+            activeButton=button1;
+         }// end if btn.on
+        } // end if activeButton
+       //this code must be completed for each of the buttons
+      } // end click
+      ```
+      
+###Array and For-Loop Version
+
+
