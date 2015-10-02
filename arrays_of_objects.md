@@ -19,7 +19,7 @@ For maximum flexibility for collections of objects like our Menu that is compose
 
 When we pass an object into any function, what we are actually doing is passing the reference, or memory address, of that object into the function. Since a constructor is a special type of function, objects passed to constructors are also *passed by reference*.  This is extremely helpful for us.  See the section on [Reference Data Types](reference_data_types.md) for more detail on this.   
 
-```
+```java
 //Create Class MenuArray 
 class MenuArray{
     //instance variables
@@ -35,7 +35,7 @@ class MenuArray{
 ```
 ### Use Loops to Iterate through Array Elements
 Below is the code in the program's main tab to initialize the btnArray.
-```
+```java
 //main tab code 
 Button[] btnArray;
 MenuArray myMenuArray;
