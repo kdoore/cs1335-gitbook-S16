@@ -9,7 +9,7 @@ We will create the Menu class, and it will be composed of a set of button object
 ### Menu Code: 
 In the code below, we have created the Menu Class, we've added 3 button objects, they are initialized in the constructor and we've created a ``display()`` and ``click()`` method. Within the Menu ``display()`` method, we simply call the ``display()`` method for each button. However, right now these buttons don't have the required logic needed for them to function as a menu, we still need to add additional control logic to the ``click()`` method. Currently, each of these buttons each works independently.  
 
-```
+```java
 class Menu{
   
   Button btn1, btn2, btn3;
@@ -47,7 +47,7 @@ In the image above, each circle represents the state of the system when that but
 ###ActiveButton variable
 We need a variable to store the current activeButton, we can use an int variable and constant values for our allowed states for buttons: 1, 2, 3:
 
-```
+```java
 int activeButton=0;  //no buttons are active 
 final button1 = 1;   //constant value can't be modified
 final button2 = 2;   // we use these as state indicator variables
@@ -59,7 +59,7 @@ In the code above, when a click event happens we simply call all menu-button cli
 
 ###Button1 Click()
 Based on the image above, we can start to think about this logic by focusing on just Button1.  We can see from the image that the only time we need to worry about button1 being clicked is when it isn't currently the ``activeButton``.  If we verify that activeButton != button1, then we can check the state of btn1 after the button1.click() method is executed, if it is now in the on state:  ``btn1.on==true``, then we know to change set activeButton=button1.  In addition, as shown in the FSM image above, we also know that we need to manually set both btn2 and btn3 off, we do this by setting btn2.on=false.  We don't need to know which state was the previous active state...it could have been either button2 or button3, but we set both of their internal states to off and we're on our way to having working radio buttons.  We simply need to write similar tests for the cases when we know that button2 is not the activeButton, and similarly with button3.  The code below shows the logic for button1.
-```
+```java
 void click(int mX, int mY){
         // check to make sure btn1 is not the current activeButton
       if(activeButton != button1){
