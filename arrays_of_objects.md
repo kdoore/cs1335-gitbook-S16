@@ -58,15 +58,37 @@ void click(int mX, int mY){
       if(activeButton != button1){
         btn1.click(mX, mY);   //call the click method for btn1
         if(btn1.on==true){  //the button has just been activated by the click event
+            activeButton=button1;  //set to activeButton
             btn2.on=false;  //set btn2 off
             btn3.on=false;  //set btn3 off
-            activeButton=button1;
          }// end if btn.on
         } // end if activeButton
        //this code must be completed for each of the buttons
-      } // end click
+      } // end click function
       ```
       
 ###Array and For-Loop Version
+Below is the array version of the above code.  For some sections of the code, psudo code is used in comments to indicate that additional code needs to be added to implement the specified functionality.  
 
+Can you complete the code below, given the hints telling the locic that needs to be implemented?
 
+```java
+
+void click(int mX, int mY){
+    for(int i=0;i< numButtons; i++){//outer loop through each button
+            // check to make sure btn1 is not the current activeButton
+    if(activeButton != btnArray[i]{
+        btnArray[i].click(mX, mY)//call the click method for btn1
+        if(btnArray[i].on){  //check to see if btn has been turned on
+           activeButton=btnArray[i];  //set activeButton
+                    //shut all other buttons off
+           for( var j=0;j <numButtons; j++){
+                    //for all buttons that aren't i==j
+                    //turn button to off state
+           }
+        }
+    } //end if activeButton  
+    }// end outer for-loop
+}//end click function
+
+```
