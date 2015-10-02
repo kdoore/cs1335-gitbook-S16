@@ -89,7 +89,7 @@ class Button{
 ###Main Tab - Creating Button Objects
 The code below is from the main tab for a program which uses the Button class to make Button objects.  The code shows the comparision between how to declare and initialize primitive variables like int.  When creating objects, it's necessary to call the class constructor function. 
 
-```
+```java
 //Global Variable Declaration
 int someVal;  //we declare the type: int, then the name someVal
 Button myButton;  //we declare the type: Button, then the name: myButton
@@ -113,7 +113,7 @@ void mouseClicked(){
 ```
 
 #Working Button Code
-```
+```java
 
 ///this is our Button base-class
 class Button{
