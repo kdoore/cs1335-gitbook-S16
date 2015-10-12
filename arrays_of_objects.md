@@ -68,9 +68,9 @@ void click(int mX, int mY){
       ```
       
 ###Array and For-Loop Version
-Below is the array version of the above code.  For some sections of the code, psudo code is used in comments to indicate that additional code needs to be added to implement the specified functionality.  
+Below is the array version of the above code.  For some sections of the code, psudo-code is used in comments to indicate that additional code needs to be added to implement the specified functionality.  
 
-Can you complete the code below, given the hints telling the locic that needs to be implemented?
+Can you complete the code below, given the hints telling the logic that needs to be implemented?
 
 ```java
 
