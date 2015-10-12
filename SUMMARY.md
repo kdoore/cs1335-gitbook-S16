@@ -15,5 +15,5 @@
 * [Arrays of Objects](arrays_of_objects.md)
 * [Reference Data Types](reference_data_types.md)
 * [Glossary](GLOSSARY.md)
-* Object Inheritance
+* [Object Inheritance](object_inheritance.md)
 
