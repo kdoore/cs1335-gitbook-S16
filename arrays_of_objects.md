@@ -37,13 +37,13 @@ class MenuArray{
 Below is the code in the program's main tab to initialize the btnArray.
 ```java
 //main tab code 
-Button[] btnArray;
+Button[] btnArray; //declare an array of Button objects
 MenuArray myMenuArray;
 void setup(){
-    btnArray=new Button[3];
+    btnArray=new Button[3];   // initialize array of button objects
     // use loop to initialize btnArray
     for(int i=0;i < 3; i++){
-        btnArray[i]= new Button(0,(i * 50),50,50);
+        btnArray[i]= new Button(0,(i * 50),50,50);  // for each array element, call the Button constructor, to initialize a Button object.
     }
     myMenuArray = new MenuArray( btnArray, 3);  //call menu constructor using an array input parameter
 }
