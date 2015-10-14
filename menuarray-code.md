@@ -82,3 +82,36 @@ class Button{
 
 }  //end of Button class
 ```
+
+Main Tab
+```
+//Global Variable Declaration
+
+Button[] btnArray;
+MenuArray myMenuArray;
+
+//initialization
+void setup(){
+  size(400,400);
+  int numButtons=3;
+  btnArray=new Button[numButtons];
+   //   initialize each element
+  int size=50;
+  for( int i=0;i<numButtons;i++){
+    btnArray[i]= new Button(50,i *size, size,size);
+  }
+  myMenuArray = new MenuArray(btnArray, numButtons);
+   //call menu constructor using an array input parameter
+}                            
+
+void draw(){
+  myMenuArray.display();
+
+}
+
+void mouseClicked(){
+ 
+   myMenuArray.click(mouseX, mouseY);
+
+}
+```
