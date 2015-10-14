@@ -40,9 +40,10 @@ Below is the code in the program's main tab to initialize the btnArray.
 Button[] btnArray; //declare an array of Button objects
 MenuArray myMenuArray;
 void setup(){
-    btnArray=new Button[3];   // initialize array of button objects
+    btnArray=new Button[3];   // initialize array that will hold 3 button
+    objects in array positions: btnArray[0], btnArray[1], btnArray[2].
     // use loop to initialize btnArray
-    for(int i=0;i < 3; i++){
+    for(int i=0;i < 3; i++){  //Arrays are indexed starting at 0.
         btnArray[i]= new Button(0,(i * 50),50,50);  // for each array element, call the Button constructor, to initialize a Button object.
     }
     myMenuArray = new MenuArray( btnArray, 3);  //call menu constructor using an array input parameter
