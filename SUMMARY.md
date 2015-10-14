@@ -15,6 +15,6 @@
 * [Arrays of Objects](arrays_of_objects.md)
 * [Reference Data Types](reference_data_types.md)
 * [Object Inheritance](object_inheritance.md)
-* [Glossary](GLOSSARY.md)
 * [MenuArray-Code](menuarray-code.md)
+* [Glossary](GLOSSARY.md)
 
