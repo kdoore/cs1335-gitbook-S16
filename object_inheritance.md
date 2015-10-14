@@ -1,2 +1,3 @@
 # Object Inheritance
 
+One of the most powerful aspects of Object-Oriented programming is that we can utilize inheritance relationships as we create objects.  Inheritance relationships in real-world contexts help us to understand shared features that are the result of natural processes like evolution. OOP allows us to design our classes to take advantage of these natural relationships between classes that we create to model the real world.
