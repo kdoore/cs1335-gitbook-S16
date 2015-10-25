@@ -10,6 +10,6 @@ For our project, we'll look at inheritance in 2 cases.  We'll first create a gen
 
 ![](buttonClass.png)
 
-As seen in the UML class diagram below,  the PImageButton and PShapeButton classes are child classes of the base class:  Button.  They have an inheritance relationship, this is refered to as an 'Is-A' relationship.  E
+As seen in the UML class diagram below,  the PImageButton and PShapeButton classes are child classes of the base class:  Button.  They have an inheritance relationship, this is refered to as an 'Is-A' relationship.  When we define these classes, we only define new instance variables 
 
 ![](Screenshot 2015-10-25 16.59.21.png)
