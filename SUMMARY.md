@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Reference Data Types](reference_data_types.md)
 * [Java Syntax](java_syntax.md)
    * [Typed-Variables](typed-variables.md)
    * [Functions](functions.md)
@@ -13,7 +14,6 @@
 * [Buttons as Objects](buttons_as_objects.md)
 * [Menu Buttons](menu_buttons.md)
 * [Arrays of Objects](arrays_of_objects.md)
-* [Reference Data Types](reference_data_types.md)
 * [Object Inheritance](object_inheritance.md)
 * [MenuArray-Code](menuarray-code.md)
 * [Glossary](GLOSSARY.md)
