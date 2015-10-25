@@ -1,4 +1,4 @@
-# MenuArray-Code
+# MenuArray Project - Starter Code
 
 MenuArray Class
 ```
