@@ -10,6 +10,28 @@ For our project, we'll look at inheritance in 2 cases.  We'll first create a gen
 
 ![](buttonClass.png)
 
-As seen in the UML class diagram below,  the PImageButton and PShapeButton classes are child classes of the base class:  Button.  They have an inheritance relationship, this is refered to as an 'Is-A' relationship.  When we define these classes, we only define new instance variables 
+As seen in the UML class diagram below,  the PImageButton and PShapeButton classes are child classes of the base class:  Button.  They have an inheritance relationship, this is refered to as an 'Is-A' relationship.  When we define these classes, we only define new instance variables that are not inherited from the base class.  We can also indicate which methods are going to be over-ridden in the child class by listing them in the child class.  So, from the diagram below, we see that thePImageButton has a PImage img instance variable and it provides implementation for display().   
 
 ![](Screenshot 2015-10-25 16.59.21.png)
+
+If we look at the code for the PImage Button, we see that we can call the Button base class constructor uisng the *super* keyword
+
+```
+class PImageButton extends Button{
+  PImage img;
+  
+  PImageButton(String _imgFile){
+       super();
+       this.img= loadImage(_imgFile); 
+  }
+  PImageButton(float _x, float _y, float _w, float _h, String _imgFile){
+       super(_x, _y, _w, _h);
+       this.img= loadImage(_imgFile); 
+  }
+  
+  void display(){
+        super.display();
+        image(img, x+5,y+5,w-10,h-10);
+  }  
+}
+```
