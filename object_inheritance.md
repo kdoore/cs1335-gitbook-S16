@@ -4,12 +4,12 @@ One of the most powerful aspects of Object-Oriented programming is that we can u
 
 As we design classes, we want to think about designing a base-class that can function as the parent class for one or more specialized child classes.  We see these relationships as the basis for how we classify and categorize objects in the world.  We might have a parent class called `Car`, this *base-class* would have properties and behaviors that are shared by all Car objects with properties like:  wheels, engine, seats, and behaviors like: drive, stop, refuel.  Then we could have child classes that were specialized types of cars: mini-van, sports-car, station-wagon, convertible-coupe...etc.
 
-For our project, we'll look at inheritance in 2 cases.  We'll first create a generic Button class.  Then we'll create more specific types of Buttons:  PImageButtons and PShapeButtons.  These special Button child classes will allow us to add additional features compared to the generalized Button class. 
+For our project, we'll look at inheritance in 2 cases.  We'll first create a generic Button class.  Then we'll create more specific types of Buttons:  PImageButton and PShapeButton.  These special Button child classes will allow us to add additional features compared to the generalized Button class. 
 
 ###Button Base Class
 
 ![](buttonClass.png)
 
-As seen in the UML class diagram below, 
+As seen in the UML class diagram below,  the PImageButton and PShapeButton classes are child classes of the base class:  Button.  They have an inheritance relationship, this is refered to as an 'Is-A' relationship.  E
 
 ![](Screenshot 2015-10-25 16.59.21.png)
