@@ -127,4 +127,7 @@ Example Image For ImageButton
 
 [Starter Code](https://utdallas.box.com/s/flwdhgajic2y6jj5957w3qyffpuy40pm)
 
+When you download this code, you will probably need to change the folder structure:  Welcome to my world, when grading your projects ;-)
+
+You need the outer project folder to have the same name as the inner project main file.  Do not follow the prompt to create a new folder, otherwise you need to take all of the inner project files and put them in the new inner folder. 
 
