@@ -14,7 +14,7 @@ As seen in the UML class diagram below,  the PImageButton and PShapeButton class
 
 ![](Screenshot 2015-10-25 16.59.21.png)
 
-If we look at the code for the PImage Button, we see that we can call the Button base class constructor uisng the *super* keyword
+If we look at the code for the PImage Button below, we see that we can call the Button base class constructor uses the *super* keyword to call the Button base class constructor ``super()``.  In addition, we can also use  *super* as a way to call the Button base class methods: ``super.display()``.  This allows us to first call the Button display method, which gives use the background display of the default Buttons, then we can display the image() to customize the appearance of the PImageButton.  
 
 ```
 class PImageButton extends Button{
