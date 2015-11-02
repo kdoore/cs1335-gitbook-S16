@@ -16,6 +16,6 @@
 * [Arrays of Objects](arrays_of_objects.md)
 * [Object Inheritance](object_inheritance.md)
 * [MenuArray-Code](menuarray-code.md)
-* Rain-Drop Game
+* [Rain-Drop Game](rain-drop_game.md)
 * [Glossary](GLOSSARY.md)
 
