@@ -20,4 +20,5 @@
 * [Paddle Drop Game](paddle_drop_game.md)
 * [Paddle Object](paddle_object.md)
 * [Glossary](GLOSSARY.md)
+* PShape - SVG Objects
 
