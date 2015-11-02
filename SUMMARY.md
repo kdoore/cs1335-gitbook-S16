@@ -19,5 +19,5 @@
 * [Rain-Drop Game](rain-drop_game.md)
 * [Paddle Object](paddle_object.md)
 * [Glossary](GLOSSARY.md)
-* Paddle Drop Game
+* [Paddle Drop Game](paddle_drop_game.md)
 
