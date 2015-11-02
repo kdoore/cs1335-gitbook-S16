@@ -1,4 +1,4 @@
-# Paddle Object
+#Paddle Object
 
 
 In the previous section, we reviewed Daniel `Shiffman's` Rain Game, Object-Oriented Game.  Now, we want
@@ -8,8 +8,7 @@ provide a user with extra scoring opportunities.  For now, let's just look at ho
 a paddle that moves left and right in response to keyboard input.  
 
 
-KeyPressed Event
-=================
+###KeyPressed Event
 
 The processing reference code for the keyPressed function can help us determine how to move the paddle object in response to a user's keyboard interaction.  Below is the processing example code
 ```	
@@ -38,4 +37,23 @@ keyCode == UP, is used to determine whether to move the paddle upwards.
 For our project, we'll be using a paddle that moves horizontally, so we'll look at whether
 keyCode == LEFT, or KeyCode == RIGHT, and then we'll need to create code that changes the
 behavior of our paddle's movement based on these keyCode comparisons.
+
+###KeyPressed Event Handlers
+
+First we need to create a Paddle class:  This will be simliar to the Ball class, but we'll have a rectangular object that moves based on the users keyboard interactions.  So, instead of the move() method, we'll have  pressedLeft() and  pressedRight() methods::
+```	
+	//this code is part of the Paddle class definition
+	
+	void pressedLeft(){
+       if(x>0){   //check to make sure that the paddle doesn't move off the left edge
+          x=x-speed;  // decrease x position to move the paddle left
+        }
+      }
+      void pressedRight(){
+     	if(x+pWidth<width){  //make sure paddle stays within the right canvas border
+       		x=x+speed;
+     	}
+     }
+```
+The other methods and constructors are basically just like the Ball object, where we have paddle position coordinates: x,y and paddle dimensions pWidth, pHeight.  We also have a speed variable that controls how fast the paddle moves.
 
