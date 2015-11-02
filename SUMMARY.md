@@ -18,4 +18,5 @@
 * [MenuArray-Code](menuarray-code.md)
 * [Rain-Drop Game](rain-drop_game.md)
 * [Glossary](GLOSSARY.md)
+* Paddle Object
 
