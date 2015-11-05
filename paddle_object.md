@@ -65,3 +65,8 @@ The other methods and constructors are basically just like the Ball object, wher
 ###KeyPressed boolean
 If we wanted to allow the user the ability to continue moving the paddle by holding the arrow keys
 down, we'd want to use the KeyPressed boolean variable to check within the draw loop for each frame of execution if one of the arrow keys is being pressed.  We can still use the Paddle class event handlers, however we'd move our Key tests and execution of eventHandlers so they are called from the draw loop.  This could provide smoother game-play.
+
+Can you write a function that can be called if (KeyPressed ==true)?  
+
+void PaddleKeyPressHandler()  
+
