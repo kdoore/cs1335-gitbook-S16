@@ -1,0 +1,2 @@
+# Abstract Pattern Class
+
