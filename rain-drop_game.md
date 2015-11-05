@@ -70,8 +70,9 @@ This is an important function of a constructor:  to create any objects that are 
 	
 Ball Class Code
 =================
-Here is the code for the Ball class  Note that we're using PVector for speed and location::
-	
+Here is the code for the Ball class  
+
+```	
 	class Ball{
 
     // instance variables
@@ -100,6 +101,7 @@ Here is the code for the Ball class  Note that we're using PVector for speed and
 
     // class methods  
     // this method is responsible for creating the displayed ball object
+    
     void display(){
        fill(currentColor);  //this may be highlighted or ballColor
        ellipse(x,y,diameter,diameter);
@@ -107,6 +109,7 @@ Here is the code for the Ball class  Note that we're using PVector for speed and
     }
 
     //this method is responsible for determining movement of the ball 
+    
     void move(){
       x +=speed;
       y += speed;
@@ -134,7 +137,7 @@ Here is the code for the Ball class  Note that we're using PVector for speed and
     }
 
 	} //end of Ball class
-	
+```	
 This is the end of the code for the Ball class.  This class has 4 different methods.  Each of these methods does a simple task. It is best to 
 have your object methods designed to perform one well defined task.  If we have a more complex task, we can break that down into simpler methods 
 we can also call methods from within other methods if it makes our code easier to understand.
@@ -144,7 +147,7 @@ Timer Class Code
 
 Here is the code for the timer class.  It uses the processing function ``millis()`` which counts milliseconds since the sketch started.  Shiffman uses
 the timer to generate an event to create a new Drop that can fall from the top of the canvas.  ::		
-			
+```		
 	class Timer{
    		int startedTime;
    		int totalTime;
@@ -171,14 +174,14 @@ the timer to generate an event to create a new Drop that can fall from the top o
    		}
   
 	}  //end of Timer class
-
+```
 
 				
 ###Object Inheritance
 
 Here, we are going to use :ref:`Object Inheritance` is the code for the Drop class, it is a child class of the Ball class and it inherits the instance variables
-and methods from the Ball class.  we use the ``super`` keyword to refer to methods in the parent Ball class::
- 
+and methods from the Ball class.  we use the ``super`` keyword to refer to methods in the parent Ball class
+``` 
  class Drop extends Ball{
   boolean isActive;  //this is instance variable for drop class
   color dropColor;
@@ -212,7 +215,7 @@ and methods from the Ball class.  we use the ``super`` keyword to refer to metho
     super.display();
   }
   }
-
+```
 In the above code, we have created a class that's a child class of the Ball class.  We have
 used the keyword ``super`` within the constructor so that we're calling the constructor for the
 ``Ball`` class.  We have used the ``extends`` keyword in the first line of the class declaration
@@ -234,8 +237,9 @@ we use the Class name, then the name of the object instance to declare the globa
 	    
 	`object instance name:`  ``myCatcher``
 
-Here's the code for executing the beginning of our game::
+Here's the code for executing the beginning of our game
 
+```
 	//rain catcher game: main file
 	Catcher myCatcher;   //declare a Catcher object named myCatcher
 	Ball ball1;
@@ -266,6 +270,7 @@ Here's the code for executing the beginning of our game::
   		}
   }
   
+```
 
 In the code above, the first thing we determine is the location of the catcher object
 based on the user's mouse position.  Then we display the myCatcher object.  Similarly, 
