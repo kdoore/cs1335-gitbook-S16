@@ -11,6 +11,7 @@ a paddle that moves left and right in response to keyboard input.
 ###KeyPressed Event
 
 The processing reference code for the keyPressed function can help us determine how to move the paddle object in response to a user's keyboard interaction.  Below is the processing example code
+
 ```	
 	// based on code from http://processing.org/reference/keyCode.html
 	
@@ -41,6 +42,7 @@ behavior of our paddle's movement based on these keyCode comparisons.
 ###KeyPressed Event Handlers
 
 First we need to create a Paddle class:  This will be simliar to the Ball class, but we'll have a rectangular object that moves based on the users keyboard interactions.  So, instead of the move() method, we'll have  pressedLeft() and  pressedRight() methods::
+
 ```	
 	//this code is part of the Paddle class definition
 	
@@ -55,5 +57,6 @@ First we need to create a Paddle class:  This will be simliar to the Ball class,
      	}
      }
 ```
+
 The other methods and constructors are basically just like the Ball object, where we have paddle position coordinates: x,y and paddle dimensions pWidth, pHeight.  We also have a speed variable that controls how fast the paddle moves.
 
