@@ -64,9 +64,8 @@ Here is code for the Catcher class::
         }
 	}
 	
-It's critical to note that in the constructor ``Catcher(float r)``, we are initializing the PVector object.  
-This is an important function of a constructor:  to create any objects that are instance variables of the
-class.  We can't use any of these objects until they've been initialized.  
+  
+This is an important function of a constructor:  to create any objects that are instance variables of the class.  We can't use any of these objects until they've been initialized.  
 
 	
 Ball Class Code
@@ -79,8 +78,8 @@ Here is the code for the Ball class  Note that we're using PVector for speed and
     color currentColor;  //current color of the ball
     color ballColor;  //store color to reset after highlighting
     color highlightColor;  //highlight color of the ball
-    PVector position;
-    PVector speed;
+    float x, float y;
+    float speed;
     float diameter;  
 
     //Constructor
@@ -93,8 +92,9 @@ Here is the code for the Ball class  Note that we're using PVector for speed and
       currentColor=_c;
       ballColor=currentColor;
       highlightColor=color(255,255,0,40);
-      position=new PVector(_x,_y);
-      speed=new PVector(_xspeed,_yspeed);
+      x=_x;  
+      y=_y;
+     speed= _speed;
       diameter=_d;
     }
 
@@ -102,25 +102,26 @@ Here is the code for the Ball class  Note that we're using PVector for speed and
     // this method is responsible for creating the displayed ball object
     void display(){
        fill(currentColor);  //this may be highlighted or ballColor
-       ellipse(position.x,position.y,diameter,diameter);
+       ellipse(x,y,diameter,diameter);
        currentColor=ballColor; //reset ballColor back to original color
     }
 
-    //this method is responsible for determining movement of the ball using the PVector function ``add()``
+    //this method is responsible for determining movement of the ball 
     void move(){
-      position.add(speed);
-      if(position.x > (width-diameter/2) || position.x < (0+diameter/2)){  
-        speed.x *= -1;
+      x +=speed;
+      y += speed;
+      if(x > (width-diameter/2) || x < (0+diameter/2)){  
+        speed *= -1;
       }
       if(position.y > (height-diameter/2) || position.y <(0+diameter/2)){
-        speed.y *=-1;
+        speed *=-1;
       }
     }
 
    //comparison method:  do comparison and return true or false
   
      boolean isIntersecting(Ball otherBall){
-        float distance= PVector.dist(this.position, otherBall.position);  //PVector distance between 2 points
+        float distance=  dist(x,y, otherBall.x, otherBall.y);  //distance between 2 points
      
         if( distance <= (this.diameter / 2) + (otherBall.diameter / 2)){
           return true;
@@ -189,11 +190,10 @@ and methods from the Ball class.  we use the ``super`` keyword to refer to metho
   Drop(float _x, float _y){
     // call the Ball constructor
     super();
-    this.position.x=_x;
-    this.position.y=_y;
+    x=_x;
+    y=_y;
     this.diameter=5;
-    this.speed.x=0;
-    this.speed.y=3;
+    this.speed=3;
     dropColor=color(0,50,255,100);
     this.ballColor=dropColor;
     isActive=true;
@@ -201,8 +201,8 @@ and methods from the Ball class.  we use the ``super`` keyword to refer to metho
   
   void move(){
     if(isActive){
-       position.add(speed);  //we've set x speed to 0;
-       if(position.y>=height+10){
+       y +=speed;  //we've set x speed to 0;
+       if(y>=height+10){
          isActive=false;
      }
     }
