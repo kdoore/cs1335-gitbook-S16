@@ -16,10 +16,10 @@
 * [Arrays of Objects](arrays_of_objects.md)
 * [Object Inheritance](object_inheritance.md)
 * [MenuArray-Code](menuarray-code.md)
+* Abstract Pattern Class
 * [Rain-Drop Game](rain-drop_game.md)
 * [Paddle Drop Game](paddle_drop_game.md)
 * [Paddle Object](paddle_object.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
-* Abstract Pattern Class
 
