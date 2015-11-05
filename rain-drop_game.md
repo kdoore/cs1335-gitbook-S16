@@ -28,8 +28,7 @@ In Chapter 10, Shiffman introduces the idea of using algorithmic thinking to fig
  
 ###Psudocode
 
- 
-  Psudocode is a way to write the main concepts for the program
+ Psudocode is a way to write the main concepts for the program
   
   Setup:  
   	Initialize catcher object
@@ -65,7 +64,7 @@ Here is code for the Catcher class::
 	}
 	
   
-This is an important function of a constructor:  to create any objects that are instance variables of the class.  We can't use any of these objects until they've been initialized.  
+This is an important function of a constructor: to create any objects that are instance variables of the class.  We can't use any of these objects until they've been initialized.  
 
 	
 Ball Class Code
@@ -138,6 +137,7 @@ Here is the code for the Ball class
 
 	} //end of Ball class
 ```	
+
 This is the end of the code for the Ball class.  This class has 4 different methods.  Each of these methods does a simple task. It is best to 
 have your object methods designed to perform one well defined task.  If we have a more complex task, we can break that down into simpler methods 
 we can also call methods from within other methods if it makes our code easier to understand.
@@ -181,6 +181,7 @@ the timer to generate an event to create a new Drop that can fall from the top o
 
 Here, we are going to use :ref:`Object Inheritance` is the code for the Drop class, it is a child class of the Ball class and it inherits the instance variables
 and methods from the Ball class.  we use the ``super`` keyword to refer to methods in the parent Ball class
+
 ``` 
  class Drop extends Ball{
   boolean isActive;  //this is instance variable for drop class
@@ -216,6 +217,7 @@ and methods from the Ball class.  we use the ``super`` keyword to refer to metho
   }
   }
 ```
+
 In the above code, we have created a class that's a child class of the Ball class.  We have
 used the keyword ``super`` within the constructor so that we're calling the constructor for the
 ``Ball`` class.  We have used the ``extends`` keyword in the first line of the class declaration
