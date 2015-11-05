@@ -1,6 +1,6 @@
 # Rain-Drop Game
 
-In Shiffman's book, he creates a very simple game based on a simple ball-like objects 
+In Shiffman's book, he creates a simple game based on a simple ball-like objects 
 and a few other simple objects like a timer object and a catcher object.  He uses arrays 
 of objects so that we can use a loop to update objects for each iteration of the draw loop.
 
