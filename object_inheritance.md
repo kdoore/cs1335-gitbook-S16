@@ -14,6 +14,8 @@ As seen in the UML class diagram below,  the PImageButton and PShapeButton class
 
 ![](Screenshot 2015-10-25 16.59.21.png)
 
+###PImage Class
+
 If we look at the code for the PImage Button below,in the first line, we see that we use the keyword *extends* which is how we indicate that this class inherits from the Button base class. Then  we see that we are able to call the Button base class constructor uses the *super* keyword to call the Button base class constructor ``super()``.  In addition, we can also use  *super* as a way to call the Button base class methods: ``super.display()``.  This allows us to first call the Button display method, which gives use the background display of the default Buttons, then we can display the image() to customize the appearance of the PImageButton.  
 
 ```
