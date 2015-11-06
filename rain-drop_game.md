@@ -45,9 +45,6 @@ Here is code for the Catcher class::
         float r;  //radius
         float x, y; //position
         
-        Catcher(){
-          this(15);
-        }
         Catcher(float _r){
                 r=_r;
                 x=width/2, y=height/2;
@@ -65,7 +62,6 @@ Here is code for the Catcher class::
 	
   
 This is an important function of a constructor: to create any objects that are instance variables of the class.  We can't use any of these objects until they've been initialized.  
-
 	
 Ball Class Code
 =================
@@ -82,11 +78,6 @@ Here is the code for the Ball class
     float speed;
     float diameter;  
 
-    //Constructor
-    Ball(){  //default constructor
-      	this(color(255,0,0), width/2, height/2, 5, 3, 5 );  //call the constructor with initialization values
-    }
-
     // constructor with initialization arguments
    Ball(color _c, float _x,float _y, float _d, float _xspeed, float _yspeed){
       currentColor=_c;
@@ -94,7 +85,7 @@ Here is the code for the Ball class
       highlightColor=color(255,255,0,40);
       x=_x;  
       y=_y;
-     speed= _speed;
+      speed= _speed;
       diameter=_d;
     }
 
@@ -110,12 +101,13 @@ Here is the code for the Ball class
     //this method is responsible for determining movement of the ball 
     
     void move(){
-      x +=speed;
-      y += speed;
-      if(x > (width-diameter/2) || x < (0+diameter/2)){  
-        speed *= -1;
+      float radius=diameter/2;
+      x +=speed;  //increment position in x direction
+      y += speed;  
+      if(x > (width-radius) || x < (0+radius)){    //check boundries
+        speed *= -1;  // change speed direction
       }
-      if(position.y > (height-diameter/2) || position.y <(0+diameter/2)){
+      if(position.y > (height-radius) || position.y <(0 + radius)){
         speed *=-1;
       }
     }
@@ -124,9 +116,9 @@ Here is the code for the Ball class
   
      boolean isIntersecting(Ball otherBall){
         float distance=  dist(x,y, otherBall.x, otherBall.y);  //distance between 2 points
-     
-        if( distance <= (this.diameter / 2) + (otherBall.diameter / 2)){
-          return true;
+        
+        if( distance <= (this.diameter/2) + (otherBall.diameter / 2)){
+          return true; 
         }
         return false;
     }
