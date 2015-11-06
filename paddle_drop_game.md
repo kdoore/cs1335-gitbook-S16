@@ -33,4 +33,4 @@ Next, we’ll want a few methods, we may add more methods later, but we can imme
    isGameOver( ) : `boolean`
 ```
 
-### 
+ 
