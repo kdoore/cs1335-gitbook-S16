@@ -18,15 +18,19 @@ To begin design of our game, let’s look at the changes we’ll need to make, t
 -   resetBtn: `button`
 
 We can use integer values to indicate the possible gameState values, this will allow us to use a switch(gameState) structure. We can use the keyword `final` to make it clear that these are values that shouldn’t be changed within the program :
-
+```
     final int START=0;
     final int ACTIVE=1;
     final int END=2; 
+    ```
 
 Next, we’ll want a few methods, we may add more methods later, but we can immediately imagine we’ll need the following methods:
 
 ### Game: Methods
+```
+   display( ) : `void`
+   reset( ) : `void`
+   isGameOver( ) : `boolean`
+```
 
--   display( ) : `void`
--   reset( ) : `void`
--   isGameOver( ) : `boolean`
+### 
