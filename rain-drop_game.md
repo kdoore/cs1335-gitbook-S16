@@ -167,7 +167,6 @@ the timer to generate an event to create a new Drop that can fall from the top o
   
 	}  //end of Timer class
 ```
-
 				
 ###Object Inheritance
 
