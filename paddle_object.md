@@ -68,5 +68,17 @@ down, we'd want to use the `keyPressed` boolean variable to check within the dra
 
 Can you write a function that can be called if (keyPressed == true)?  
 
-void PaddleKeyPressHandler()  
+void PaddleKeyPressHandler() 
+
+In order to enhance our game, we'll use PImage or PShape objects to create our game objects.  The link below provides great resources for prototyping 2D games.
+
+PImage -  Open Source Game Art: [Lost Garden](http://www.lostgarden.com/search/label/free%20game%20graphics)
+
+girl1.png
+
+![](girl1.png)
+
+star.png
+
+![](star.png)
 
