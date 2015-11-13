@@ -21,7 +21,7 @@
 * [Paddle Drop Game](paddle_drop_game.md)
 * [Paddle Object](paddle_object.md)
 * [Collision Detection](collision_detection.md)
-* PImage GameObjects
+* [PImage GameObjects](pimage_gameobjects.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
 
