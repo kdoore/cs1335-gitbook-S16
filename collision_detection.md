@@ -5,3 +5,5 @@ In order to determine whether a collision has happened, each iteration of the dr
 ###Bounding Boxes
 Since we're using .png images and svg graphics, these image formats allow for transparency, so our objects can visually appear smaller than the actual image dimensions.  For that reason, we want to add additional geometry variables that can be used to define a bounding box around our images, and it will be the bounding box dimensions that are used to determine if objects have overlapping geometry.
 
+###Bounding Box Variables in Drop Base Class
+
