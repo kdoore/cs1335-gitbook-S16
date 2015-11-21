@@ -24,6 +24,6 @@
 * [PImage GameObjects](pimage_gameobjects.md)
 * [Level Class](level_class.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
-* Game Class
+* [Game Class](game_class.md)
 * [Glossary](GLOSSARY.md)
 
