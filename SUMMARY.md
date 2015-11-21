@@ -22,7 +22,7 @@
 * [Paddle Object](paddle_object.md)
 * [Collision Detection](collision_detection.md)
 * [PImage GameObjects](pimage_gameobjects.md)
-* Level Class
+* [Level Class](level_class.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
 
