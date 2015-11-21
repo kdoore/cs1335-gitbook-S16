@@ -25,4 +25,5 @@
 * [Level Class](level_class.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
+* Game Class
 
