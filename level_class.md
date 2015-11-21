@@ -1,6 +1,6 @@
 # Level Class
 
-We want to add a Level class that functions as a data structure to keep track of all data relevent to each game level. 
+We want to add a Level class that acts as a data structure to keep track of all data relevant to each game level. 
 
 We will change levels when all drops have either been caught or have fallen below the bottom of the screen.  In Shiffman's code, this is when:  levelCounter >= drops.length
 
