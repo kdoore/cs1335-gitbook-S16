@@ -23,3 +23,18 @@ For the Drop classes, if we define the bounding box dimensions as above, then in
 The images below show the red bounding box compared to the actual image dimensions.  The star image needs a smaller bounding box, while the heart image size and bounding box are essentially the same size.
 
 ![](Screenshot 2015-11-21 22.05.54.png)   ![](Screenshot 2015-11-21 22.06.01.png) ![](Screenshot 2015-11-21 22.30.21.png)
+
+Below is the display method for PImage drop, with code to draw the bounding box and an ellipse at the origin.  
+```
+void display(){
+        translate(x,y);  //move the  origin to x,y
+        image(img, -bXOffset/2,-bYOffset/2,w,h);  //display the image, offset 
+        noFill();
+        stroke(255,0,0);
+        rect(0,0,wBound,hBound); //bounding box, 
+        fill(255,0,0);
+        ellipse(0,0,5,5);  //origin
+        resetMatrix();
+      }  //end display 
+```
+
