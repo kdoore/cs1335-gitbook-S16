@@ -12,9 +12,9 @@ To begin design of our game, let’s look at the changes we’ll need to make, t
 
 -   score: `int`
 -   gameState: `int`
--   
--   startBtn: `button`
--   resetBtn: `button`
+-   curLevel: `Level'
+-   startBtn: `Button`
+-   resetBtn: `Button`
 
 We can use integer values to indicate the possible gameState values, this will allow us to use a switch(gameState) structure. We can use the keyword `final` to make it clear that these are values that shouldn’t be changed within the program :
 ```
