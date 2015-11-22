@@ -24,7 +24,23 @@ The images below show the red bounding box compared to the actual image dimensio
 
 ![](Screenshot 2015-11-21 22.05.54.png)   ![](Screenshot 2015-11-21 22.06.01.png) ![](Screenshot 2015-11-21 22.30.21.png)
 
-Below is the display method for PImage drop, with code to draw the bounding box and an ellipse at the origin.  
+Below is the constructor for the PImageDrop, x and speed aren't defined since the values set in the parent Drop class work fine to initialize the PImageDrop class.  
+
+ ```
+  ImageDrop(PImage _img,  float _w, float _h, float _bXOffset, float _bYOffset){
+    y = random(-40,-80);   // Start a little above the window
+    img=_img;
+    w = _w;   //display width size
+    h = _h;  //display height
+    bXOffset=_bXOffset;  //Xsize difference for bounding box
+    bYOffset = _bYOffset;  //YSize difference for bounding box
+    wBound=w-bXOffset;  //bounding box width
+    hBound=h-bYOffset;  //bounding box height
+    value=5;  //point value
+  }
+```
+Below is the display method for PImage drop, with code to draw the bounding box and an ellipse at the origin.
+
 ```
 void display(){
         translate(x,y);  //move the  origin to x,y
