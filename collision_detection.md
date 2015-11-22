@@ -9,12 +9,17 @@ Since we're using .png images and svg graphics, these image formats allow for tr
 
 Since we want to be able to test for intersection for any type of drop object, or for a child class of a drop object, then we need to create instance variables within the base class that can be inherited by any child classes.  
 
-The following Drop Class instance variables will allow us to set bounding box dimensions as separate elements from the actual graphic element which might be a PImage or a PShape.  Then, in the child drop class, we can define bounding box dimensions which might be different than the actual png or svg graphic image.  Ideally, we would want to provide a constructor or method to set these values for child drops.  We can define a bounding box offset that specifies the size difference between the graphic and the bounding box.
+The following Drop Class instance variables will allow us to set bounding box dimensions as separate elements from the actual graphic element which might be a PImage or a PShape.  Then, in the child drop class, we can define bounding box dimensions which might be different than the actual png or svg graphic image.  Ideally, we would want to provide a constructor or method to set these values for child drops.  We can define a bounding box offset for X and Y dimensions that specifies the size difference between the graphic and the bounding box.
 
 ```java
-bOffset //bounding box offset
-wBound=w-bOffset; // bounding box width
-hBound=h-bOffset; //bounding box height
+bXOffset //bounding box Xoffset
+bYOffset //bounding box YOffset
+wBound=w-bXOffset; // bounding box width
+hBound=h-bYOffset; //bounding box height
 ````
 
 For the Drop classes, if we define the bounding box dimensions as above, then in the display() method for child drop classes: PImageDrop and PShapeDrop, which override the parent Drop method, if we create a rectangle with noFill() using the bounding box dimensions to help
+
+The images below show the red bounding box compared to the actual image dimensions.  The star image needs a smaller bounding box, while the heart image size and bounding box are essentially the same size.
+
+![](Screenshot 2015-11-21 22.05.54.png)   ![](Screenshot 2015-11-21 22.06.01.png) ![](Screenshot 2015-11-21 22.30.21.png)
