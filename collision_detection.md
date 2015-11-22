@@ -53,4 +53,16 @@ void display(){
         resetMatrix();
       }  //end display 
 ```
+###Paddle Class
+Finally, we can see how wBound and hBound are used in the Paddle Intersection Method
 
+```
+boolean intersect(Drop d){  //fix  //use drop wBound, hBound for intersection
+        boolean isIntersecting = false;
+         if(((d.y + d.hBound) > this.y) && (( d.x + d.wBound ) > this.x) && (d.x <(this.x + this.xSize))){
+             isIntersecting=true;
+         }
+        return isIntersecting;
+      }
+
+```
