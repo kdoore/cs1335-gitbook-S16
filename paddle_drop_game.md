@@ -21,6 +21,7 @@ We can use integer values to indicate the possible gameState values, this will a
     final int START=0;
     final int ACTIVE=1;
     final int END=2; 
+    final int MAX_NUMBER_DROPS = 50;
     ```
 
 Next, we’ll want a few methods, we may add more methods later, but we can immediately imagine we’ll need the following methods:
