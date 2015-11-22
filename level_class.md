@@ -2,7 +2,13 @@
 
 We want to add a Level class that acts as a data structure to keep track of all data relevant to each game level. 
 
-We can add a variety of instance variables to the Level class
+We can add a variety of instance variables to the Level class.  We'll create an array of Level objects and a reference variable: curLevel to keep track of the current level.  
+
+Level instance variables
+
+
+Level[] levels = new Level[3];
+levels[0] = new Level( 
 
 We will change levels when all drops have either been caught (intersected) or have fallen below the bottom of the screen (finished).  In Shiffman's code, this is when:  levelCounter >= drops.length
 
@@ -27,4 +33,3 @@ This code below goes in the main tab, in the draw loop function, after the drop[
       }
 ```
 
-We can 
