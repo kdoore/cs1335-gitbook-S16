@@ -12,8 +12,7 @@ To begin design of our game, let’s look at the changes we’ll need to make, t
 
 -   score: `int`
 -   gameState: `int`
--   missedCount: `int`
--   maxAllowedMisses: `int`
+-   
 -   startBtn: `button`
 -   resetBtn: `button`
 
