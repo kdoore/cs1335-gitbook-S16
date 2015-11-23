@@ -53,6 +53,12 @@ void display(){
         resetMatrix();
       }  //end display 
 ```
+
+If we define bXOffset, bYOffset as the size difference between the image and the bounding box, then we can have the image offset by half of that size in the negative x and y locations so we can still use d.x and d.y as the origin for determining bounding box for collisions, this makes our intersect code easier to read..
+
+
+![](collision.png)
+
 ###Paddle Class
 Finally, we can see how wBound and hBound are used in the Paddle Intersection Method
 
@@ -66,7 +72,3 @@ boolean intersect(Drop d){  //fix  //use drop wBound, hBound for intersection
       }
 
 ```
-If we define bXOffset, bYOffset as the size difference between the image and the bounding box, then we can have the image offset by half of that size in the negative x and y locations so we can still use d.x and d.y as the origin for determining bounding box for collisions, this makes our intersect code easier to read..
-
-
-![](collision.png)
