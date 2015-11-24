@@ -10,7 +10,7 @@ Level instance variables:
   PImage bkgImg;  
   color c;  //we used this to test that levels were changing, we'll use bkgImage instead
   
-Level Class Constructor header:
+Level Class Constructor Header:
 ```
 Level( int _id, int _lives, color _c, PImage _bkgImg)
 ```
