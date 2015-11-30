@@ -15,6 +15,7 @@
 * [Menu Buttons](menu_buttons.md)
 * [Arrays of Objects](arrays_of_objects.md)
 * [Object Inheritance](object_inheritance.md)
+* Inheritance Concepts
 * [MenuArray-Code](menuarray-code.md)
 * [Abstract Pattern Class](abstract_pattern_class.md)
 * [Rain-Drop Game](rain-drop_game.md)
@@ -26,5 +27,4 @@
 * [Game Class](game_class.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
-* Inheritance Concepts
 
