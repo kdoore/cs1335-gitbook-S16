@@ -56,7 +56,7 @@ This code below goes in the main tab, in the draw loop function, after the drop[
         println("curLevel changed " + curLevel.id);
       }
 ```
-Below are slight variations of the SpaceCute Background Image from 
+Below are slight variations of the SpaceCute Background Image from  [Daniel Cook's Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html).  We can use these to prototype our Level bkgImg, but in your project you'll need to use different images.
 
 
 ![](background_b1.png)
