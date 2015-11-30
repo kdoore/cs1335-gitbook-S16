@@ -29,10 +29,13 @@ So, both the Drop class and the ImageDrop class have code that implements the di
 
 //this code is in the main program tab
 
-Drop shorse=new Seahorse();
+Drop idrop=new ImageDrop();
 
 draw(){
-        shorse.display();
+        idrop.display();
 }
 15.3. Arrays of Multiple Types of Objects
 An array must be declared to contain a specific type of element. Above we’ve looked at an array that’s been declared to hold Drop elements: Drop[] drops. However using the Object concept of Inheritance will allow us to use this drops array to hold several different types of Drop objects, as long as these other objects are from a class that is a child class of the Drop class. We
+
+
+
