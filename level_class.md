@@ -56,4 +56,11 @@ This code below goes in the main tab, in the draw loop function, after the drop[
         println("curLevel changed " + curLevel.id);
       }
 ```
+Below are slight variations of the SpaceCute Background Image from 
 
+
+![](background_b1.png)
+
+![](background_purple.png)
+
+![](background_teal.png)
