@@ -26,4 +26,5 @@
 * [Game Class](game_class.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
+* Inheritance Concepts
 
