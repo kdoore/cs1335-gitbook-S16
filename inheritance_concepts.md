@@ -17,14 +17,14 @@ class ImageDrop extends Drop{
                 s=loadShape("seahorse.png");
         }
 
-display(){
+        display(){
                 //code in here to display the .png file
                 println("ImageDrop method");
         }
 
 } //end of ImageDrop class
 ```
-15.2. Method Override
+### Method Override
 So, both the Drop class and the ImageDrop class have code that implements the display() method. So, the compiler must determine which display() method to use if a ImageDrop object calls the display() method. The compiler first checks the child, ImageDrop class, if it has code implemented for a method, when a method has been called by a child object, then the child method code is implemented. Let’s clarify this concept of method over-ride. In the main program tab, we’ll have a ImageDrop object, and then it will call the display() method. We’ll expect that it’ll print the text “DmageDrop” to the console since that’s the code we’ve written above in the ImageDrop display() method.:
 
 //this code is in the main program tab
@@ -32,7 +32,8 @@ So, both the Drop class and the ImageDrop class have code that implements the di
 Drop idrop=new ImageDrop();
 
 draw(){
-        idrop.display();
+        idrop.display();  //should print "ImageDrop method"
+        
 }
 ```
 
