@@ -81,6 +81,8 @@ Game Class Methods:
       curLevel=levels[0];
       score=0;
       resetLevel();
+      startBtn.on=false;
+      stopBtn.on=false;
     }
     
     void drawBackground(){
