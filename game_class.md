@@ -59,5 +59,35 @@ class Game{
 ```
 Game Class Methods: 
 
+  
+  
+MainTab Code:
+```
+Game game;
 
+void setup() {
+  size(400,400);
+  game = new Game();
+}
 
+void draw() {
+  game.drawBackground();
+  
+  if (game.gameOver) {
+    game.displayGameOver();
+  } 
+  else {
+     game.play();
+     game.displayScore();
+     game.displayLevel();
+    }  //end of else(!gameOver)
+  
+  game.drawBar();
+  game.drawButtons();
+  }  //end of Draw loop
+
+  void mouseClicked(){
+    game.buttonClick(mouseX, mouseY);
+  }
+ 
+```
