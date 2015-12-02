@@ -42,22 +42,18 @@ class Game{
   Timer timer;
   
   Game(){
-      state=INACTIVE;
-      Level[ ] levels = new Level[2]; 
-      levels[0]= new Level(0,30,color(#5F6795));  // change: use a PImage for background 
-      levels[1]= new Level(1,10,color(#5F9594));
-      curLevel=levels[0];
-      state = INACTIVE;
+     state = INACTIVE;
       wbar = width/7;
-      startBtn = new Button(width - wbar + 5, 10, 40, 30);
-      stopBtn = new Button(width - wbar + 5, 50, 40, 30);
+      initializeLevels();
+      startBtn = new Button(width - wbar + 5, 10, 40, btnHeight);
+      stopBtn = new Button(width - wbar + 5, 50, 40, btnHeight);
+      PImage paddleImage=loadImage("girl1.png"); 
       paddle = new Paddle(200, 300, 252, 285, paddleImage);
-      numberDropsDone = 0;
-      numberLivesLeft = curLevel.lives;
-      totalDrops = 0;
+      starImage= loadImage("star.png");
       drops = new Drop[MAX_NUMBER_DROPS];    // Create spots in the array
       timer = new Timer(300);   // Create a timer and set initial value to 300 milliseconds
       gameOver = false;
+      reset();  //initialize values
     }
 
 ```
