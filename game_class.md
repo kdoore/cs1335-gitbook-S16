@@ -75,6 +75,39 @@ Game Class Methods:
       timer.setTime( constrain((300-curLevel.id*25),0,300)    );
       totalDrops = 0; 
     }
+    
+    void drawBackground(){
+    
+    }
+    
+    void play(){
+    
+    }
+    
+    void displayScore(){
+    
+    }
+    
+    void displayLevel(){
+    
+    }
+    
+    void displayGameOver(){
+    
+    }
+    
+    void drawBar(){
+    
+    }
+    
+    void drawButtons(){
+    
+    }
+    
+    void buttonClick(){
+    
+    }
+    
  ``` 
 
   
