@@ -80,7 +80,7 @@ void draw() {
      game.play();
      game.displayScore();
      game.displayLevel();
-    }  //end of else(!gameOver)
+    }  //end of else
   
   game.drawBar();
   game.drawButtons();
