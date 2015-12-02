@@ -58,6 +58,24 @@ class Game{
 
 ```
 Game Class Methods: 
+```
+ void initializeLevels(){
+      PImage bkg1 = loadImage("background_b1.png");
+      PImage bkg2 = loadImage("background_teal.png");
+      levels = new Level[2];
+      levels[0]= new Level(0,30,color(#5F6795),bkg1);
+      levels[1]= new Level(1,10,color(#5F9594),bkg2);
+      curLevel=levels[0];
+    }
+    
+    
+    void reset(){
+      numberLivesLeft = curLevel.lives;
+      numberDropsDone = 0;
+      timer.setTime( constrain((300-curLevel.id*25),0,300)    );
+      totalDrops = 0; 
+    }
+ ``` 
 
   
   
