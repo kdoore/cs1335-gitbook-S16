@@ -68,6 +68,7 @@ Game Class Methods:
       curLevel=levels[0];
     }
     
+    //use to reset values for new level
     void reset(){
       numberLivesLeft = curLevel.lives;
       numberDropsDone = 0;
@@ -75,8 +76,11 @@ Game Class Methods:
       totalDrops = 0; 
     }
     
+    //use to reset entire game
     void resetScore(){
-      
+      curLevel=levels[0];
+      score=0;
+    
     }
     
     void drawBackground(){
