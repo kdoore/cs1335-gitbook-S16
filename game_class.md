@@ -25,7 +25,7 @@ class Game{
   int state;
   int score;
   int numberDropsDone; // levelCounter
-  int numLivesLeft;
+  int numberLivesLeft;
   int wbar;
   final int ACTIVE=1;
   final int INACTIVE = 0;
