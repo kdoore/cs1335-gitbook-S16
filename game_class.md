@@ -76,7 +76,7 @@ Game Class Methods:
     }
     
     void resetScore(){
-    
+      
     }
     
     void drawBackground(){
