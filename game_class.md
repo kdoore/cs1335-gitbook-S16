@@ -16,3 +16,43 @@ We can refactor Shiffman's game code to provide a cleaner, more modular structur
 - paddle:Paddle// Paddle class
 - timer: Timer// Timer class
 - drops: array of drop objects // size of array is MAX_NUMBER_DROPS
+ 
+
+Game Class Constructor:
+
+```
+class Game{
+  int state;
+  int score;
+  int numberDropsDone; // levelCounter
+  int numLivesLeft;
+  int wbar;
+  final int ACTIVE=1;
+  final int INACTIVE = 0;
+  final int MAX_NUMBER_DROPS=50;
+  Level levels;
+  Level curLevel;
+  Paddle paddle;
+  Button startBtn, stopBtn;
+  boolean gameOver;
+  
+  Game(){
+      state=INACTIVE;
+      Level[ ] levels = new Level[2]; 
+      levels[0]= new Level(0,30,color(#5F6795));  // change: use a PImage for background 
+      levels[1]= new Level(1,10,color(#5F9594));
+      curLevel=levels[0];
+      state = INACTIVE;
+      wbar = width/7;
+      startBtn = new Button(width - wbar + 5, 10, 40, 30);
+      stopBtn = new Button(width - wbar + 5, 50, 40, 30);
+      paddle = new Paddle(200, 300, 252, 285, paddleImage);
+      numberDropsDone = 0;
+      numberLivesLeft = curLevel.lives;
+      totalDrops = 0;
+      drops = new Drop[MAX_NUMBER_DROPS];    // Create spots in the array
+      timer = new Timer(300);   // Create a timer and set initial value to 300 milliseconds
+      gameOver = false;
+    }
+
+```
