@@ -68,7 +68,6 @@ Game Class Methods:
       curLevel=levels[0];
     }
     
-    
     void reset(){
       numberLivesLeft = curLevel.lives;
       numberDropsDone = 0;
