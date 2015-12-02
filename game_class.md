@@ -71,8 +71,12 @@ Game Class Methods:
     void reset(){
       numberLivesLeft = curLevel.lives;
       numberDropsDone = 0;
-      timer.setTime( constrain((300-curLevel.id*25),0,300)    );
+      timer.setTime(constrain((300-curLevel.id*25),0,300));
       totalDrops = 0; 
+    }
+    
+    void resetScore(){
+    
     }
     
     void drawBackground(){
