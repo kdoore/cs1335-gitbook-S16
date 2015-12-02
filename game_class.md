@@ -56,3 +56,7 @@ class Game{
     }
 
 ```
+Game Class Methods: 
+
+
+
