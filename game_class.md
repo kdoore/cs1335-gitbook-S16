@@ -26,15 +26,20 @@ class Game{
   int score;
   int numberDropsDone; // levelCounter
   int numberLivesLeft;
+  int totalDrops=0;
   int wbar;
   final int ACTIVE=1;
   final int INACTIVE = 0;
   final int MAX_NUMBER_DROPS=50;
-  Level levels;
+  Level[] levels;
   Level curLevel;
   Paddle paddle;
+  PImage starImage;
+  int btnHeight=30;
   Button startBtn, stopBtn;
   boolean gameOver;
+  Drop[] drops;
+  Timer timer;
   
   Game(){
       state=INACTIVE;
