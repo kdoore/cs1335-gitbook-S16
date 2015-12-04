@@ -27,3 +27,13 @@ Then, in your game, when you want to play this sound, you include this code:
 ```
 soundfile.play();
 ```
+
+We can play when there's a collision with an ImageDrop
+
+```
+boolean idrop = drops[i].getClass().equals(ImageDrop.class);
+if(idrop){
+     soundfile.play();
+}
+
+```
