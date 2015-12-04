@@ -22,3 +22,8 @@ void setup() {
 } //end of setup
 
 ```
+
+Then, in your game, when you want to play this sound, you include this code: 
+```
+soundfile.play();
+```
