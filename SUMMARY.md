@@ -25,7 +25,7 @@
 * [PImage GameObjects](pimage_gameobjects.md)
 * [Level Class](level_class.md)
 * [Game Class](game_class.md)
+* Game Sounds
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
-* Game Sounds
 
