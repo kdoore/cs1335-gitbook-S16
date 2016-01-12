@@ -7,6 +7,9 @@ Variables can be considered as named containers to hold values that can be modif
 ###Primitive-Data Types 
 Primitive-type variables involve a single piece of information like integers: `int`, decimal numbers: `float`, booleans: `boolean`, and characters: `char`. Primitive-types use system-defined sizes of memory-space. Primitive data-types are pre-defined as part of the Java language, the primitive-type names are Java reserved keywords. [Java Reference](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
+###Literal Values
+When we initialize primitive-type variables, we often write a number or character symbol to represent a fixed value such as ``10`` for the numeric value 10. When we use literal values, these are associated    
+
 ###Reference Data Types
 Reference-type values refer to more complex data-types like arrays and objects; the memory-size required storing the data elements for complex, reference-type variables, is not as easy for the system to determine when the program is being compiled.  Reference data-data types include Array, ArrayList, String, and custom Class-Objects.
 
