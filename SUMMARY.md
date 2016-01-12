@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Java Syntax](java_syntax.md)
-   * [Functions](functions.md)
    * [Typed-Variables](typed-variables.md)
+   * [Functions](functions.md)
    * [Reference Data Types](reference_data_types.md)
 * [Modeling Processes:  States and Events](modelingstates_and_events_md.md)
 * [Button States](button_states.md)
