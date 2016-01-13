@@ -1,23 +1,25 @@
-Functions
-==========
+#Functions
+
 
 Functions allow modular design and reusability of program components.
 
 Functions should be designed to perform a well-defined, specific task. Functions should be designed so that they are not inter-dependent on code external to the function and so that they don't cause unintended side-effects to code outside of the function.
 
-##3Function Syntax
+###Function Syntax
 
 When writing a code for function, the following components define the syntax of a function definition. :
-
-    returnType functionName( int arg1, float arg2){  // int and float parameter arguments
+```java
+    returnType functionName( int arg1, float arg2){  // int and float input parameters 
         // body code of a function
+        return returnValue
     }
+    ```
 
 For an example function that adds an `int` and a `float` values, the function syntax is
 
 -   **function name:** `addNumbers`
 -   **function return type:** `int  //the variable type of the function's return type must be declared`
--   **function arguments:** `int arg1, float arg2 //arguments must have a declared variable-type` :
+-   **function parameters:** `int arg1, float arg2 //parameters must have a declared variable-type` :
 
         int addNumbers( int arg1, float arg2){   //function signature
             int sum= arg1 + int(arg2);
