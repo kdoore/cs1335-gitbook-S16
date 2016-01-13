@@ -2,7 +2,7 @@ Variables
 ==========
 
 
-Variables can be considered as named containers to hold values that can be modified. Since [Processing](http://processing.org) is based on the Java language, it uses statically-typed variables, this means that a variable must be declared as a specific data-type before it can be used in a program, and that once declared, the variable cannot be modified to . Variables can hold different types of data, two important types of variables are: *primitive-type* , or *reference-type* variables.  
+Variables can be considered as named containers to hold values that can be modified. Since [Processing](http://processing.org) is based on the Java language, it uses statically-typed variables, this means that a variable must be declared as a specific data-type before it can be used in a program, and that once declared, the variable cannot be modified to refer to a different type of data later in the program. Variables can hold different types of data, two important types of variables are: *primitive-type* , or *composite* variables.  
 
 ###Primitive-Data Types 
 Primitive-type variables involve a single piece of information like integers: `int`, decimal numbers: `float`, booleans: `boolean`, and characters: `char`. Primitive-types use system-defined sizes of memory-space. Primitive data-types are pre-defined as part of the Java language, the primitive-type names are Java reserved keywords. [Java Reference](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
@@ -10,8 +10,8 @@ Primitive-type variables involve a single piece of information like integers: `i
 ###Literal Values
 When we initialize primitive-type variables, we often write a number or character symbol to represent a fixed value such as ``10`` for the numeric value 10. When we use literal values, these are associated    
 
-###Reference Data Types
-Reference-type values refer to more complex data-types like arrays and objects; the memory-size required storing the data elements for complex, reference-type variables, is not as easy for the system to determine when the program is being compiled.  Reference data-data types include Array, ArrayList, String, and custom Class-Objects.
+###Composite Data Types
+Composite-type values refer to more complex data-types like arrays and objects; the memory-size required storing the data elements for complex variables, is not as easy for the system to determine when the program is being compiled, so a variable of this type actually refers to the memory-address of the starting location in memory where the data is stored.  Typically the remainder of the data is stored in adjacent memory locations.  For an array or string, the   Composite-type variables can also be considered as `reference` data types include Array, ArrayList, String, and custom Class-Objects.  `Reference` variables 
 
 ###Object Variables
 When we create custom Java Classes, we can define variables that will be associated with object-instances when a custom object is created in our code.  There are 2 primary types of variables associated with Objects:  Instance variables and static-Class variables.  Instance variables are associated with an instance of an object, so the values of instance variables is likely different for each instance of an object that is created.   Static variables can be created as a special type of class variable, these are associated with the Class itself.
