@@ -2,7 +2,7 @@ Variables
 ==========
 
 
-Variables can be considered as named containers to hold values that can be modified. Since [Processing](http://processing.org) is based on the Java language, it uses statically-typed   variables, this means that a variable must be declared before it can be used in a program. Variables can hold different types of data, two important types of variables are: *primitive-type* , or *reference-type* variables.  
+Variables can be considered as named containers to hold values that can be modified. Since [Processing](http://processing.org) is based on the Java language, it uses statically-typed variables, this means that a variable must be declared as a specific data-type before it can be used in a program, and that once declared, the variable cannot be modified to . Variables can hold different types of data, two important types of variables are: *primitive-type* , or *reference-type* variables.  
 
 ###Primitive-Data Types 
 Primitive-type variables involve a single piece of information like integers: `int`, decimal numbers: `float`, booleans: `boolean`, and characters: `char`. Primitive-types use system-defined sizes of memory-space. Primitive data-types are pre-defined as part of the Java language, the primitive-type names are Java reserved keywords. [Java Reference](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
