@@ -20,8 +20,8 @@ A major difference in behavior exists between primitive and reference data-types
 When we create custom Java Classes, we can define variables that will be associated with object-instances when a custom object is created in our code.  There are 2 primary types of variables associated with Objects:  Instance variables and static-Class variables.  Instance variables are associated with an instance of an object, so the values of instance variables is likely different for each instance of an object that is created.   Static variables can be created as a special type of class variable, these are associated with the Class itself.
 
 
-Declaration and Initialization
-==============================
+###Declaration and Initialization
+
 
 In the example code below, the first line of code prints the sum of 2 integer literal values. In the code that follows, `int` and `float` variables are declared and assigned values. 
 ```
@@ -34,18 +34,18 @@ int num2 = 5;   // declare an integer and assign it a literal integer value
 float num3 = 5.0 //declare a floating point variable and assign it a literal decimal value;
 ```
 
-Typed Variables
-===============
+###Typed Variables
+
 
 When using P5js and the Khan-Academy Javascript Tutorials, variables were all of the type `var`. There was no distinction between different types of variables. However, with Processing, all variables must be declared as a specific data-type such as `int`, `float`, `boolean`, `char`, etc. Typed variables allows the computer to allocate enough memory to hold the value.
 
-Integers
-========
+###Integers
+
 
 Whole numbers like -1, 0, 1, 2.
 
-Integer Division
-----------------
+###Integer Division
+
 
 When using the math division operator with integers, the resulting value is also an integer, so any fractional division remainder is truncated
 ```
@@ -55,8 +55,8 @@ int num1 = 5 / 2;   // 2   the remainder from division is truncated.
 
 int num2 = 5.0 / 2  // error cannot convert from a float to an int  
 ```
-Floats
-======
+###Floats
+
 
 Decimal numbers like 1.0, 5.5, -1.0. Also, whole numbers like 1, 0, 1 can be stored as floating point numbers.
 
@@ -70,8 +70,8 @@ float correctFraction = 5.0 / 2;    // 2.5
 
 float correctFraction2 = 5 / (2 * 1.0)  // 2.5  multiplication by 1.0 insures decimal division
 ```
-Integer and Float Type-Conversion
-=================================
+###Integer and Float Type-Conversion
+
 
 Care must be taken when using `float` and `int` variables in expressions or mathematical operations together, particularly when doing division. In general, an error will be generated if an operation will result in truncation. Processing can automatically convert an `int` to a `float` value, however an error will occur when trying to convert a `float` value to an `int` value. 
 ```java
@@ -90,8 +90,8 @@ Processing provides type conversion functions to allow conversion between `int` 
 
     int num2 = ( int )val1;   //5   This syntax also works to convert a float to an  int, and results in truncation of the number.
 
-Modulus Operator
-================
+###Modulus Operator
+
 
 The modulus operator `%` calculates the remainder of integer division. Modulus is often used to determine if a number is odd or even where n % 2 equals 0 if n is even.:
 
@@ -102,8 +102,8 @@ println( 12 % 2 );  // 0    test to determine if 12 is even, for any number n, i
 println( 2 % 5 );   // 2    5 goes into 2 zero times with a remainder of 2
 ```
 
-Booleans
-========
+###Boolean
+
 
 Boolean variables can have the value `true` or `false`; Boolean variables are useful for storing the state some program element to control some branch option within the program, often within a conditional branch, the boolean variable value is changed to indicate the state of the program has changed.:
 
@@ -115,8 +115,8 @@ if(isActive){
 }
         ```
 
-Characters
-==========
+###Character
+
 
 Single letters or other unicode symbol like 'a', 'b', 'A', '%' . The `char` variable type must use single quotes around a single character. When multiple characters are used in a single variable, then the :code: String variable type should be used. 
 
@@ -125,17 +125,22 @@ Single letters or other unicode symbol like 'a', 'b', 'A', '%' . The `char` vari
     char otherChar = '&';
     char notAChar = "A";  //this is a string and not a charchar literal.
 ```
+###Operators
 
-Random Numbers
-==============
+###Random Numbers
+
+
+
 
 The `random( )` function in [Processing](http://processing.org) can be used to generate psudo-random variables. The `random(float min, float max)` function takes 2 input parameters and returns a floating point number ranging from the first argument to the second argument. If only 1 argument is used, then 0 is the default minimum value.:
 
     float randVal1 = random( 1 , 100 );   //returns a float between 1 and 100.
     float randVal2 = random( 100 ); //returns a float between 0 and 100.
 
-Questions
-=========
+###Questions
+
+---
+
 
 > What are the values of the following?
 >
