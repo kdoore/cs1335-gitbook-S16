@@ -28,5 +28,5 @@
 * [Game Sounds](game_sounds.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
-* Recursion
+* [Recursion](recursion.md)
 
