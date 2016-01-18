@@ -1,7 +1,7 @@
 #Functions
 
 
-Functions allow modular design and reusability of program components.
+Functions allow modular design and re-usability of program components.
 
 Functions should be designed to perform a well-defined, specific task. Functions should be designed so that they are not inter-dependent on code external to the function and so that they don't cause unintended side-effects to code outside of the function.
 
@@ -18,14 +18,23 @@ When writing a code for function, the following components define the syntax of 
 For an example function that adds an `int` and a `float` values, the function syntax is
 
 -   **function name:** `addNumbers`
--   **function return type:** `int  //the variable type of the function's return type must be declared`
--   **function parameters:** `int arg1, float arg2 //parameters must have a declared variable-type` :
+-   **function return type:** `int  //the variable type of the function's return type must be declared, or it must specified as void if no value will be returned`
+-   **function parameters:** `int arg1, float arg2 //parameters must have a declared variable-type` 
 
-        int addNumbers( int arg1, float arg2){   //function signature
-            int sum= arg1 + int(arg2);
-            return sum;
-        }
 
+ ```java
+    //function definition
+    int addNumbers( int arg1, float arg2){   //function signature
+        int sum= arg1 + int(arg2);
+        return sum;
+    }
+    
+    //function call
+    int result = addNumbers(5, 2.0);
+   ```     
+   Additional Function Terminology
+ - function definition: the full specification of a function.  In java programs, the function definition can be located .
+        
 ###Functions and Variable Scope
 
 In [Processing](http://processing.org), variable scope is defined by code blocks which are enclosed within curly brackets: `{ }`. When designing functions, it's important to understand that function input parameters and any variables declared within the function body are local variables to the function. When a function is executed, those variables are initialized for use within the function, but when the function execution terminates, those variables are effectively destroyed, and the memory space is returned to the computer system so it is available for use by other processes. In contrast, global variables exist for the entire life of the program execution, they aren't destroyed until the program terminates.
