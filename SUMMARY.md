@@ -5,6 +5,7 @@
    * [Typed-Variables](typed-variables.md)
    * [Functions](functions.md)
    * [Reference Data Types](reference_data_types.md)
+* [Recursion](recursion.md)
 * [Modeling Processes:  States and Events](modelingstates_and_events_md.md)
 * [Button States](button_states.md)
 * [Button Types](button_types.md)
@@ -28,5 +29,4 @@
 * [Game Sounds](game_sounds.md)
 * [PShape - SVG Objects](pshape_-_svg_objects.md)
 * [Glossary](GLOSSARY.md)
-* [Recursion](recursion.md)
 
