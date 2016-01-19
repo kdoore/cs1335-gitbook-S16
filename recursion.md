@@ -1,6 +1,7 @@
 # Recursion
 
-Escher:  Print Gallery From Wikipedia     
+Escher:  Print Gallery From Wikipedia
+
 ![](https://upload.wikimedia.org/wikipedia/en/0/02/Print_Gallery_by_M._C._Escher.jpg)
 
 
