@@ -4,11 +4,6 @@
 
 ![](https://upload.wikimedia.org/wikipedia/en/0/02/Print_Gallery_by_M._C._Escher.jpg)
 
-
-[Article about Recursion Patterns Escher's Artwork: Print Gallery](http://www.ams.org/notices/200304/fea-escher.pdf) 
-
-
-
 The above images by M.C.Escher contain recursive patterns which have been further analyzed in the mentioned research papers where recursive functions have been used to create computer generated versions of Escher's amazing artwork.
 
 ###Recursion in Programming
